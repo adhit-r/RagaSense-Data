@@ -1,0 +1,125 @@
+{
+  "ingestion_summary": {
+    "timestamp": "2025-09-07T03:18:06.522056",
+    "total_sources_processed": 10,
+    "total_records_processed": 0,
+    "total_records_valid": 0,
+    "success_rate": 0,
+    "total_errors": 6,
+    "total_warnings": 0
+  },
+  "source_results": [
+    {
+      "source_name": "Google AudioSet Carnatic Music",
+      "success": false,
+      "records_processed": 0,
+      "records_valid": 0,
+      "errors": [
+        "Download failed: API download not implemented"
+      ],
+      "warnings": [],
+      "processing_time": 0.0,
+      "output_files": []
+    },
+    {
+      "source_name": "Saraga Carnatic Music Dataset",
+      "success": true,
+      "records_processed": 0,
+      "records_valid": 0,
+      "errors": [],
+      "warnings": [],
+      "processing_time": 0.000297,
+      "output_files": []
+    },
+    {
+      "source_name": "Sanidha Multi-Modal Dataset",
+      "success": true,
+      "records_processed": 0,
+      "records_valid": 0,
+      "errors": [],
+      "warnings": [],
+      "processing_time": 9e-06,
+      "output_files": []
+    },
+    {
+      "source_name": "Carnatic Music Rhythm Dataset",
+      "success": true,
+      "records_processed": 0,
+      "records_valid": 0,
+      "errors": [],
+      "warnings": [],
+      "processing_time": 1.7e-05,
+      "output_files": []
+    },
+    {
+      "source_name": "Carnatic Music Repository (ramanarunachalam)",
+      "success": false,
+      "records_processed": 0,
+      "records_valid": 0,
+      "errors": [
+        "Download failed: Cloning into '/Users/adhi/axonome/RagaSense-Data/downloads/carnatic_music_repository_(ramanarunachalam)'...\nfatal: repository 'https://github.com/ramanarunachalam/Music/tree/main/carnatic/' not found\n"
+      ],
+      "warnings": [],
+      "processing_time": 0.0,
+      "output_files": []
+    },
+    {
+      "source_name": "SANGEET XML Dataset",
+      "success": true,
+      "records_processed": 0,
+      "records_valid": 0,
+      "errors": [],
+      "warnings": [],
+      "processing_time": 2.1e-05,
+      "output_files": []
+    },
+    {
+      "source_name": "Thaat and Raga Forest (TRF)",
+      "success": false,
+      "records_processed": 0,
+      "records_valid": 0,
+      "errors": [
+        "Download failed: Could not find kaggle.json. Make sure it's located in /Users/adhi/.kaggle. Or use the environment method. See setup instructions at https://github.com/Kaggle/kaggle-api/"
+      ],
+      "warnings": [],
+      "processing_time": 0.0,
+      "output_files": []
+    },
+    {
+      "source_name": "Hindustani Music Repository (ramanarunachalam)",
+      "success": false,
+      "records_processed": 0,
+      "records_valid": 0,
+      "errors": [
+        "Download failed: Cloning into '/Users/adhi/axonome/RagaSense-Data/downloads/hindustani_music_repository_(ramanarunachalam)'...\nfatal: repository 'https://github.com/ramanarunachalam/Music/tree/main/hindustani/' not found\n"
+      ],
+      "warnings": [],
+      "processing_time": 0.0,
+      "output_files": []
+    },
+    {
+      "source_name": "Indian Music Instruments",
+      "success": false,
+      "records_processed": 0,
+      "records_valid": 0,
+      "errors": [
+        "Download failed: Could not find kaggle.json. Make sure it's located in /Users/adhi/.kaggle. Or use the environment method. See setup instructions at https://github.com/Kaggle/kaggle-api/"
+      ],
+      "warnings": [],
+      "processing_time": 0.0,
+      "output_files": []
+    },
+    {
+      "source_name": "Carnatic Music Website (ramanarunachalam)",
+      "success": false,
+      "records_processed": 0,
+      "records_valid": 0,
+      "errors": [
+        "Download failed: Scraping download not implemented"
+      ],
+      "warnings": [],
+      "processing_time": 0.0,
+      "output_files": []
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+# RagaSense-Data: Project Configuration
+# Central configuration file for the entire project
+
+project:
+  name: "RagaSense-Data"
+  version: "1.0.0"
+  description: "Unified Dataset Repository for Indian Classical Music Research"
+  author: "RagaSense Community"
+  license: "CC-BY-SA-4.0"
+
+# Data Sources Configuration
+data_sources:
+  priority_levels:
+    1: "Critical - Core datasets for basic functionality"
+    2: "High - Important for comprehensive coverage"
+    3: "Medium - Valuable additions"
+    4: "Low - Nice to have"
+    5: "Optional - Future consideration"
+
+  carnatic_sources:
+    - name: "Saraga Carnatic Music Dataset"
+      priority: 1
+      estimated_size: "50GB"
+      format: "json"
+      license: "CC-BY-4.0"
+    
+    - name: "Carnatic Music Repository (ramanarunachalam)"
+      priority: 1
+      estimated_size: "10GB"
+      format: "json"
+      license: "MIT"
+    
+    - name: "Google AudioSet Carnatic Music"
+      priority: 2
+      estimated_size: "4.6 hours"
+      format: "audio"
+      license: "CC-BY-4.0"
+
+  hindustani_sources:
+    - name: "SANGEET XML Dataset"
+      priority: 1
+      estimated_size: "20GB"
+      format: "xml"
+      license: "Research Use"
+    
+    - name: "Hindustani Music Repository (ramanarunachalam)"
+      priority: 1
+      estimated_size: "8GB"
+      format: "json"
+      license: "MIT"
+
+# Database Configuration
+databases:
+  neo4j:
+    uri: "bolt://localhost:7687"
+    username: "neo4j"
+    password: "password"  # Change in production
+    database: "ragasense"
+    
+  vector_db:
+    type: "pinecone"  # or "weaviate", "faiss"
+    api_key: ""  # Set via environment variable
+    environment: "us-west1-gcp"
+    index_name: "ragasense-audio-embeddings"
+
+# Processing Configuration
+processing:
+  audio:
+    target_sample_rate: 44100
+    target_bit_depth: 16
+    target_channels: 1  # mono
+    formats: ["wav", "mp3", "flac"]
+    
+  metadata:
+    schema_version: "1.0"
+    validation_strict: true
+    quality_threshold: 0.7
+    
+  batch_processing:
+    batch_size: 100
+    max_workers: 4
+    timeout: 3600  # 1 hour
+
+# Quality Assurance
+quality_assurance:
+  validation:
+    schema_compliance_target: 0.95
+    quality_score_threshold: 0.8
+    expert_validation_required: true
+    
+  expert_panel:
+    min_experts_per_validation: 2
+    confidence_threshold: 0.8
+    disagreement_resolution: "majority_vote"
+
+# Cross-Tradition Mapping
+cross_tradition_mapping:
+  relationship_types:
+    - "SAME"      # Identical ragas
+    - "SIMILAR"   # Very similar with minor differences
+    - "RELATED"   # Shared characteristics
+    - "DERIVED"   # One evolved from another
+    - "UNIQUE"    # Exists only in one tradition
+  
+  confidence_levels:
+    high: 0.9
+    medium: 0.7
+    low: 0.5
+    
+  validation_requirements:
+    expert_verification: true
+    minimum_confidence: 0.8
+    supporting_evidence: true
+
+# Weights & Biases Configuration
+wandb:
+  enabled: true
+  project: "ragasense-data"
+  entity: "ragasense"
+  mode: "online"  # or "offline" for development
+  
+  tracking:
+    data_ingestion: true
+    data_validation: true
+    cross_tradition_mapping: true
+    audio_analysis: true
+
+# File Organization
+file_organization:
+  naming_conventions:
+    metadata_files: "{tradition}_{raga_name}_{unique_id}.json"
+    audio_files: "{tradition}_{raga_name}_{unique_id}.wav"
+    mapping_files: "mapping_{carnatic_raga}_{hindustani_raga}.json"
+    
+  directory_structure:
+    data: "data/{tradition}/{type}/"
+    processed: "processed_data/{tradition}/"
+    logs: "logs/{date}/"
+    archive: "archive/{category}/"
+
+# Security and Privacy
+security:
+  data_encryption: true
+  access_control: true
+  audit_logging: true
+  
+  privacy:
+    anonymize_artist_names: false  # Set to true if required
+    remove_personal_info: true
+    gdpr_compliance: true
+
+# Performance Optimization
+performance:
+  caching:
+    enabled: true
+    cache_size: "1GB"
+    cache_ttl: 3600  # 1 hour
+    
+  parallel_processing:
+    enabled: true
+    max_workers: 4
+    chunk_size: 100
+    
+  memory_management:
+    max_memory_usage: "8GB"
+    cleanup_interval: 300  # 5 minutes
+
+# MacBook GPU Acceleration
+macbook_gpu:
+  enabled: true
+  device: "auto"  # auto, mps, cuda, cpu
+  batch_size: 32
+  memory_fraction: 0.8
+  
+  acceleration_features:
+    data_ingestion: true
+    data_validation: true
+    cross_tradition_mapping: true
+    metadata_management: true
+    quality_assurance: true
+  
+  optimization_settings:
+    use_mps: true  # Metal Performance Shaders
+    use_tensorflow_metal: true
+    enable_mixed_precision: true
+    optimize_for_memory: true
+
+# Monitoring and Logging
+monitoring:
+  log_level: "INFO"
+  log_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  log_rotation: true
+  max_log_size: "100MB"
+  
+  metrics:
+    processing_time: true
+    error_rates: true
+    data_quality_scores: true
+    throughput: true
+
+# Development and Testing
+development:
+  testing:
+    unit_tests: true
+    integration_tests: true
+    data_validation_tests: true
+    
+  code_quality:
+    linting: true
+    type_checking: true
+    formatting: true
+    
+  documentation:
+    auto_generate: true
+    include_examples: true
+    api_documentation: true

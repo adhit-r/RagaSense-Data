@@ -1,0 +1,212 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RagaSense Cross-Tradition Mapping Schema",
+  "description": "Schema for mapping relationships between Carnatic and Hindustani ragas",
+  "type": "object",
+  "required": ["mapping_id", "carnatic_raga", "hindustani_raga", "relationship"],
+  "properties": {
+    "mapping_id": {
+      "type": "string",
+      "description": "Unique identifier for this mapping",
+      "pattern": "^mapping_[a-z0-9_]+$"
+    },
+    "carnatic_raga": {
+      "type": "object",
+      "required": ["name", "id"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Carnatic raga name"
+        },
+        "id": {
+          "type": "string",
+          "description": "Carnatic raga internal ID"
+        },
+        "melakarta_number": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 72,
+          "description": "Melakarta number if applicable"
+        },
+        "arohana": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Carnatic arohana"
+        },
+        "avarohana": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Carnatic avarohana"
+        }
+      }
+    },
+    "hindustani_raga": {
+      "type": "object",
+      "required": ["name", "id"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Hindustani raga name"
+        },
+        "id": {
+          "type": "string",
+          "description": "Hindustani raga internal ID"
+        },
+        "thaat": {
+          "type": "string",
+          "description": "Thaat classification"
+        },
+        "arohana": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Hindustani arohana"
+        },
+        "avarohana": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Hindustani avarohana"
+        }
+      }
+    },
+    "relationship": {
+      "type": "object",
+      "required": ["type", "confidence", "verified_by"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["SAME", "SIMILAR", "RELATED", "DERIVED", "UNIQUE"],
+          "description": "Type of relationship between ragas"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Confidence score for this mapping"
+        },
+        "verified_by": {
+          "type": "string",
+          "description": "Expert ID who verified this mapping"
+        },
+        "verification_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date of expert verification"
+        },
+        "verification_notes": {
+          "type": "string",
+          "description": "Expert notes on the verification"
+        }
+      }
+    },
+    "differences": {
+      "type": "object",
+      "properties": {
+        "performance_style": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Differences in performance style"
+        },
+        "usage_context": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Differences in usage context"
+        },
+        "regional_variations": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Regional variations between traditions"
+        },
+        "ornamental_differences": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Differences in ornamentation techniques"
+        },
+        "swara_differences": {
+          "type": "object",
+          "properties": {
+            "carnatic_swaras": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "hindustani_swaras": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "differences": {
+              "type": "array",
+              "items": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "supporting_data": {
+      "type": "object",
+      "properties": {
+        "example_recordings": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "IDs of example recordings demonstrating this relationship"
+        },
+        "expert_notes": {
+          "type": "string",
+          "description": "Detailed analysis notes from experts"
+        },
+        "research_references": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Academic papers or references supporting this mapping"
+        },
+        "audio_examples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "carnatic_example": {"type": "string"},
+              "hindustani_example": {"type": "string"},
+              "description": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["created_date", "last_updated"],
+      "properties": {
+        "created_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date when this mapping was created"
+        },
+        "last_updated": {
+          "type": "string",
+          "format": "date",
+          "description": "Date when this mapping was last updated"
+        },
+        "contributor": {
+          "type": "string",
+          "description": "Contributor who created this mapping"
+        },
+        "review_status": {
+          "type": "string",
+          "enum": ["pending", "under_review", "approved", "rejected", "needs_revision"],
+          "description": "Current review status"
+        },
+        "disagreements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "expert_id": {"type": "string"},
+              "disagreement_type": {"type": "string"},
+              "notes": {"type": "string"},
+              "date": {"type": "string", "format": "date"}
+            }
+          },
+          "description": "Record of expert disagreements"
+        }
+      }
+    }
+  }
+}

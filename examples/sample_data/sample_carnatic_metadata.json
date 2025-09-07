@@ -1,0 +1,83 @@
+{
+  "id": "sample_carnatic_001",
+  "tradition": "carnatic",
+  "raga": {
+    "name": "Kalyani",
+    "tradition_specific_id": "melakarta_65",
+    "confidence": 0.95,
+    "verified": true,
+    "melakarta_number": 65,
+    "arohana": ["S", "R2", "G3", "M2", "P", "D2", "N3", "S'"],
+    "avarohana": ["S'", "N3", "D2", "P", "M2", "G3", "R2", "S"],
+    "vadi": "M2",
+    "samvadi": "S",
+    "time_of_day": "evening",
+    "season": "all",
+    "mood": ["devotional", "peaceful"]
+  },
+  "audio": {
+    "file_path": "data/carnatic/audio/sample_carnatic_001.wav",
+    "duration_seconds": 180.5,
+    "sample_rate": 44100,
+    "format": "wav",
+    "bit_depth": 16,
+    "channels": 1,
+    "quality_score": 0.92
+  },
+  "performance": {
+    "artist": "M. S. Subbulakshmi",
+    "artist_id": "mss_001",
+    "instrument": "vocal",
+    "accompanying_instruments": ["violin", "mridangam", "tambura"],
+    "recording_date": "1965-01-01",
+    "performance_type": "concert",
+    "venue": "Music Academy, Chennai",
+    "tempo": 120
+  },
+  "composition": {
+    "title": "Kalyani Raga Alapana",
+    "composer": "Traditional",
+    "type": "alapana",
+    "tala": "chaturasra_jati_triputa",
+    "language": "sanskrit"
+  },
+  "segments": [
+    {
+      "start_time": 0.0,
+      "end_time": 60.0,
+      "segment_type": "alapana",
+      "raga_purity": 0.95,
+      "notes": "Initial alapana in Kalyani"
+    },
+    {
+      "start_time": 60.0,
+      "end_time": 180.5,
+      "segment_type": "improvisation",
+      "raga_purity": 0.92,
+      "notes": "Extended improvisation with gamakas"
+    }
+  ],
+  "analysis": {
+    "pitch_analysis": {
+      "fundamental_frequency_range": [220.0, 880.0],
+      "pitch_accuracy": 0.94
+    },
+    "rhythm_analysis": {
+      "tempo_stability": 0.89,
+      "rhythmic_complexity": 0.75
+    },
+    "melodic_analysis": {
+      "melodic_contour": "ascending_with_ornamentation",
+      "ornamentation_density": 0.82
+    }
+  },
+  "metadata": {
+    "source": "sample_data",
+    "license": "CC-BY-SA-4.0",
+    "contributor": "ragasense_team",
+    "created_date": "2024-01-01",
+    "last_updated": "2024-01-01",
+    "version": "1.0",
+    "quality_tier": "tier1"
+  }
+}
