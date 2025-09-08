@@ -1,0 +1,219 @@
+{
+  "mapping_Bhairavi": {
+    "mapping_id": "mapping_Bhairavi",
+    "raga_id": "Bhairavi",
+    "raga_name": "Bhairavi",
+    "tradition": "Both",
+    "mapped_to": "Thodi",
+    "equivalence_type": "moderate",
+    "confidence": "MEDIUM",
+    "score": 120,
+    "evidence": "Hindustani Bhairavi corresponds to Carnatic Thodi in terms of aroha and avaroha",
+    "sources": [
+      "Wikipedia",
+      "Bhairavi (Carnatic) analysis"
+    ],
+    "last_updated": "2025-09-08T22:03:54.602177"
+  },
+  "mapping_Shankara": {
+    "mapping_id": "mapping_Shankara",
+    "raga_id": "Shankara",
+    "raga_name": "Shankara",
+    "tradition": "Carnatic",
+    "mapped_to": {
+      "raga_name": "Shankarabharanam",
+      "carnatic_name": "Shankarabharanam",
+      "hindustani_name": "Bilawal",
+      "confidence": "high",
+      "evidence": "expert_knowledge"
+    },
+    "equivalence_type": "similar",
+    "confidence": "high",
+    "score": 0,
+    "evidence": "",
+    "sources": [],
+    "last_updated": "2025-09-08T22:03:54.602195"
+  },
+  "mapping_Nat": {
+    "mapping_id": "mapping_Nat",
+    "raga_id": "Nat",
+    "raga_name": "Nat",
+    "tradition": "Carnatic",
+    "mapped_to": {
+      "raga_name": "Natabhairavi",
+      "carnatic_name": "Natabhairavi",
+      "hindustani_name": "Bhairavi",
+      "confidence": "medium",
+      "evidence": "expert_knowledge"
+    },
+    "equivalence_type": "similar",
+    "confidence": "medium",
+    "score": 0,
+    "evidence": "",
+    "sources": [],
+    "last_updated": "2025-09-08T22:03:54.602199"
+  },
+  "mapping_Hindol": {
+    "mapping_id": "mapping_Hindol",
+    "raga_id": "Hindol",
+    "raga_name": "Hindol",
+    "tradition": "Carnatic",
+    "mapped_to": {
+      "raga_name": "Hindolam",
+      "carnatic_name": "Hindolam",
+      "hindustani_name": "Malkauns",
+      "confidence": "high",
+      "evidence": "expert_knowledge"
+    },
+    "equivalence_type": "similar",
+    "confidence": "high",
+    "score": 0,
+    "evidence": "",
+    "sources": [],
+    "last_updated": "2025-09-08T22:03:54.602204"
+  },
+  "mapping_Todi": {
+    "mapping_id": "mapping_Todi",
+    "raga_id": "Todi",
+    "raga_name": "Todi",
+    "tradition": "Both",
+    "mapped_to": {
+      "raga_name": "Todi",
+      "carnatic_name": "Todi",
+      "hindustani_name": "Miyan ki Todi",
+      "confidence": "high",
+      "evidence": "expert_knowledge"
+    },
+    "equivalence_type": "similar",
+    "confidence": "high",
+    "score": 0,
+    "evidence": "",
+    "sources": [],
+    "last_updated": "2025-09-08T22:03:54.602209"
+  },
+  "mapping_Bhairav": {
+    "mapping_id": "mapping_Bhairav",
+    "raga_id": "Bhairav",
+    "raga_name": "Bhairav",
+    "tradition": "Hindustani",
+    "mapped_to": {
+      "raga_name": "Bhairavi",
+      "carnatic_name": "Bhairavi",
+      "hindustani_name": "Bhairavi",
+      "confidence": "high",
+      "evidence": "expert_knowledge"
+    },
+    "equivalence_type": "similar",
+    "confidence": "high",
+    "score": 0,
+    "evidence": "",
+    "sources": [],
+    "last_updated": "2025-09-08T22:03:54.602216"
+  },
+  "mapping_Mohanam": {
+    "mapping_id": "mapping_Mohanam",
+    "raga_id": "Mohanam",
+    "raga_name": "Mohanam",
+    "tradition": "Carnatic",
+    "mapped_to": "Bhoopali",
+    "equivalence_type": "perfect",
+    "confidence": "HIGH",
+    "score": 185,
+    "evidence": "Both are major pentatonic scales using the same five notes",
+    "sources": [
+      "Wikipedia",
+      "Indian classical music literature"
+    ],
+    "last_updated": "2025-09-08T22:03:54.602261"
+  },
+  "mapping_Kalyani": {
+    "mapping_id": "mapping_Kalyani",
+    "raga_id": "Kalyani",
+    "raga_name": "Kalyani",
+    "tradition": "Both",
+    "mapped_to": "Yaman",
+    "equivalence_type": "perfect",
+    "confidence": "HIGH",
+    "score": 195,
+    "evidence": "Both use Lydian mode with same scale. Kalyani is S R2 G3 M2 P D2 N3 and Yaman uses all shuddh swaras except tivra Ma",
+    "sources": [
+      "Wikipedia",
+      "Rajan Parrikar Music Archive",
+      "Quora analysis"
+    ],
+    "last_updated": "2025-09-08T22:03:54.602264"
+  },
+  "mapping_Natabhairavi": {
+    "mapping_id": "mapping_Natabhairavi",
+    "raga_id": "Natabhairavi",
+    "raga_name": "Natabhairavi",
+    "tradition": "Both",
+    "mapped_to": {
+      "raga_name": "Natabhairavi",
+      "carnatic_name": "Natabhairavi",
+      "hindustani_name": "Bhairavi",
+      "confidence": "medium",
+      "evidence": "expert_knowledge"
+    },
+    "equivalence_type": "similar",
+    "confidence": "medium",
+    "score": 0,
+    "evidence": "",
+    "sources": [],
+    "last_updated": "2025-09-08T22:03:54.602266"
+  },
+  "mapping_Kambhoji": {
+    "mapping_id": "mapping_Kambhoji",
+    "raga_id": "Kambhoji",
+    "raga_name": "Kambhoji",
+    "tradition": "Carnatic",
+    "mapped_to": {
+      "raga_name": "Kambhoji",
+      "carnatic_name": "Kambhoji",
+      "hindustani_name": "Kafi",
+      "confidence": "medium",
+      "evidence": "expert_knowledge"
+    },
+    "equivalence_type": "similar",
+    "confidence": "medium",
+    "score": 0,
+    "evidence": "",
+    "sources": [],
+    "last_updated": "2025-09-08T22:03:54.602269"
+  },
+  "mapping_Hindolam": {
+    "mapping_id": "mapping_Hindolam",
+    "raga_id": "Hindolam",
+    "raga_name": "Hindolam",
+    "tradition": "Carnatic",
+    "mapped_to": "Malkauns",
+    "equivalence_type": "high",
+    "confidence": "HIGH",
+    "score": 175,
+    "evidence": "Standard equivalents with same pentatonic set",
+    "sources": [
+      "Wikipedia",
+      "Standard raga equivalence tables"
+    ],
+    "last_updated": "2025-09-08T22:03:54.602271"
+  },
+  "mapping_Nata": {
+    "mapping_id": "mapping_Nata",
+    "raga_id": "Nata",
+    "raga_name": "Nata",
+    "tradition": "Carnatic",
+    "mapped_to": {
+      "raga_name": "Natabhairavi",
+      "carnatic_name": "Natabhairavi",
+      "hindustani_name": "Bhairavi",
+      "confidence": "medium",
+      "evidence": "expert_knowledge"
+    },
+    "equivalence_type": "similar",
+    "confidence": "medium",
+    "score": 0,
+    "evidence": "",
+    "sources": [],
+    "last_updated": "2025-09-08T22:03:54.602275"
+  }
+}

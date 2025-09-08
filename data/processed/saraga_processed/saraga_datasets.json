@@ -1,0 +1,35 @@
+{
+  "saraga_carnatic_melody_synth": {
+    "name": "saraga_carnatic_melody_synth",
+    "tradition": "Carnatic",
+    "source": "saraga_carnatic_melody_synth",
+    "total_artists": 16,
+    "total_tracks": 2460,
+    "total_audio_files": 339,
+    "status": "processed"
+  },
+  "saraga1.5_carnatic": {
+    "name": "saraga1.5_carnatic",
+    "tradition": "Carnatic",
+    "source": "saraga1.5",
+    "zip_file": "/Users/adhi/axonome/RagaSense-Data/downloads/saraga_datasets/carnatic/saraga1.5_carnatic.zip",
+    "total_files": 5458,
+    "audio_files": 1982,
+    "annotation_files": 0,
+    "estimated_size_mb": 15453.650465965271,
+    "artists_found": 2,
+    "tracks_found": 1982
+  },
+  "saraga1.5_hindustani": {
+    "name": "saraga1.5_hindustani",
+    "tradition": "Hindustani",
+    "source": "saraga1.5",
+    "zip_file": "/Users/adhi/axonome/RagaSense-Data/downloads/saraga_datasets/hindustani/saraga1.5_hindustani.zip",
+    "total_files": 1868,
+    "audio_files": 216,
+    "annotation_files": 0,
+    "estimated_size_mb": 5455.90708732605,
+    "artists_found": 2,
+    "tracks_found": 216
+  }
+}

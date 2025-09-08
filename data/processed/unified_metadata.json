@@ -1,0 +1,38 @@
+{
+  "integration_timestamp": "2025-09-08T22:03:54.566008",
+  "data_sources": [
+    "ramanarunachalam",
+    "saraga_processed",
+    "cross_tradition"
+  ],
+  "total_ragas": 1340,
+  "total_artists": 19,
+  "total_tracks": 4536,
+  "total_audio_files": 4536,
+  "tradition_distribution": {
+    "ragas": {
+      "Carnatic": 1143,
+      "Hindustani": 132,
+      "Both": 65
+    },
+    "artists": {
+      "Carnatic": 17,
+      "Hindustani": 2
+    },
+    "tracks": {
+      "Carnatic": 4368,
+      "Hindustani": 168
+    }
+  },
+  "source_distribution": {
+    "ragas": {
+      "ramanarunachalam": 1340
+    },
+    "artists": {
+      "saraga": 19
+    },
+    "tracks": {
+      "saraga": 4536
+    }
+  }
+}

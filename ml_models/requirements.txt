@@ -1,0 +1,63 @@
+# RagaSense ML Model Requirements
+# Core ML and Audio Processing
+torch>=2.0.0
+torchaudio>=2.0.0
+librosa>=0.10.0
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+
+# Transformers and Deep Learning
+transformers>=4.30.0
+accelerate>=0.20.0
+datasets>=2.12.0
+
+# Visualization and Plotting
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# API and Web Framework
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+python-multipart>=0.0.6
+aiofiles>=23.1.0
+
+# Audio Processing and Analysis
+soundfile>=0.12.0
+pydub>=0.25.0
+audioread>=3.0.0
+resampy>=0.4.0
+
+# Data Processing
+pandas>=2.0.0
+h5py>=3.9.0
+tqdm>=4.65.0
+
+# Model Optimization
+optuna>=3.2.0
+ray[tune]>=2.5.0
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+httpx>=0.24.0
+requests>=2.31.0
+
+# Development and Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.4.0
+
+# Jupyter and Interactive Development
+jupyter>=1.0.0
+ipywidgets>=8.0.0
+notebook>=6.5.0
+
+# GPU Support (optional)
+# Uncomment if you have CUDA support
+# torch-audio>=2.0.0+cu118 -f https://download.pytorch.org/whl/torch_stable.html
+# torch>=2.0.0+cu118 -f https://download.pytorch.org/whl/torch_stable.html
+

@@ -1,0 +1,85 @@
+{
+  "timestamp": "2025-09-09T01:19:57.185769",
+  "actions_taken": {
+    "archived_files": 0,
+    "organized_directories": 0,
+    "created_governance": 0
+  },
+  "current_structure": {
+    "tools": {
+      "size_mb": 0.23717689514160156,
+      "file_count": 29
+    },
+    "archive": {
+      "size_mb": 1141.5894412994385,
+      "file_count": 131
+    },
+    "config": {
+      "size_mb": 0.007906913757324219,
+      "file_count": 2
+    },
+    "website": {
+      "size_mb": 186.84435939788818,
+      "file_count": 19269
+    },
+    "data_processing": {
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "docs": {
+      "size_mb": 0.16958904266357422,
+      "file_count": 34
+    },
+    "schemas": {
+      "size_mb": 0.020903587341308594,
+      "file_count": 3
+    },
+    "processed_data": {
+      "size_mb": 0.0,
+      "file_count": 0
+    },
+    "logs": {
+      "size_mb": 0.3134346008300781,
+      "file_count": 27
+    },
+    "examples": {
+      "size_mb": 0.0020542144775390625,
+      "file_count": 4
+    },
+    "scripts": {
+      "size_mb": 0.4658088684082031,
+      "file_count": 30
+    },
+    "governance": {
+      "size_mb": 0.0028638839721679688,
+      "file_count": 4
+    },
+    "venv": {
+      "size_mb": 1294.2322177886963,
+      "file_count": 72115
+    },
+    "data": {
+      "size_mb": 47938.796838760376,
+      "file_count": 20794
+    },
+    "downloads": {
+      "size_mb": 0.008649826049804688,
+      "file_count": 3
+    },
+    "ml_models": {
+      "size_mb": 0.08498954772949219,
+      "file_count": 11
+    },
+    "wandb": {
+      "size_mb": 0.35225963592529297,
+      "file_count": 161
+    }
+  },
+  "recommendations": [
+    "Regular cleanup of temporary files",
+    "Archive old analysis results monthly",
+    "Monitor disk usage and optimize storage",
+    "Update data lineage documentation",
+    "Review and update access controls"
+  ]
+}

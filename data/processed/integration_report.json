@@ -1,0 +1,420 @@
+{
+  "timestamp": "2025-09-08T22:03:54.816791",
+  "integration_statistics": {
+    "ragas_loaded": 1340,
+    "artists_loaded": 19,
+    "tracks_loaded": 4536,
+    "audio_files_loaded": 4536,
+    "cross_tradition_mappings_loaded": 12,
+    "duplicates_removed": 0,
+    "integration_time": 0
+  },
+  "unified_database_summary": {
+    "integration_timestamp": "2025-09-08T22:03:54.566008",
+    "data_sources": [
+      "ramanarunachalam",
+      "saraga_processed",
+      "cross_tradition"
+    ],
+    "total_ragas": 1340,
+    "total_artists": 19,
+    "total_tracks": 4536,
+    "total_audio_files": 4536,
+    "tradition_distribution": {
+      "ragas": {
+        "Carnatic": 1143,
+        "Hindustani": 132,
+        "Both": 65
+      },
+      "artists": {
+        "Carnatic": 17,
+        "Hindustani": 2
+      },
+      "tracks": {
+        "Carnatic": 4368,
+        "Hindustani": 168
+      }
+    },
+    "source_distribution": {
+      "ragas": {
+        "ramanarunachalam": 1340
+      },
+      "artists": {
+        "saraga": 19
+      },
+      "tracks": {
+        "saraga": 4536
+      }
+    }
+  },
+  "top_ragas": [
+    {
+      "raga_id": "Ragamalika",
+      "name": "Ragamalika",
+      "tradition": "Carnatic",
+      "song_count": 9810,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Thodi",
+      "name": "Thodi",
+      "tradition": "Carnatic",
+      "song_count": 6321,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Kalyani",
+      "name": "Kalyani",
+      "tradition": "Both",
+      "song_count": 6244,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Sankarabharanam",
+      "name": "Sankarabharanam",
+      "tradition": "Carnatic",
+      "song_count": 5192,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Bhairavi",
+      "name": "Bhairavi",
+      "tradition": "Both",
+      "song_count": 4519,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Kambhoji",
+      "name": "Kambhoji",
+      "tradition": "Carnatic",
+      "song_count": 4112,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Mohanam",
+      "name": "Mohanam",
+      "tradition": "Carnatic",
+      "song_count": 3805,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Sindhubhairavi",
+      "name": "Sindhubhairavi",
+      "tradition": "Both",
+      "song_count": 3804,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Hamsadhwani",
+      "name": "Hamsadhwani",
+      "tradition": "Carnatic",
+      "song_count": 3722,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Kapi",
+      "name": "Kapi",
+      "tradition": "Carnatic",
+      "song_count": 3607,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Panthuvarali",
+      "name": "Panthuvarali",
+      "tradition": "Carnatic",
+      "song_count": 3600,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Khamas",
+      "name": "Khamas",
+      "tradition": "Carnatic",
+      "song_count": 3447,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Poorvikalyani",
+      "name": "Poorvikalyani",
+      "tradition": "Both",
+      "song_count": 3436,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Madhyamavathi",
+      "name": "Madhyamavathi",
+      "tradition": "Carnatic",
+      "song_count": 3383,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Karaharapriya",
+      "name": "Karaharapriya",
+      "tradition": "Carnatic",
+      "song_count": 3294,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Anandabhairavi",
+      "name": "Anandabhairavi",
+      "tradition": "Both",
+      "song_count": 3236,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Hindolam",
+      "name": "Hindolam",
+      "tradition": "Carnatic",
+      "song_count": 2934,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Nata",
+      "name": "Nata",
+      "tradition": "Carnatic",
+      "song_count": 2928,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Shanmukapriya",
+      "name": "Shanmukapriya",
+      "tradition": "Carnatic",
+      "song_count": 2773,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    },
+    {
+      "raga_id": "Behag",
+      "name": "Behag",
+      "tradition": "Carnatic",
+      "song_count": 2769,
+      "sources": [
+        "ramanarunachalam"
+      ]
+    }
+  ],
+  "top_artists": [
+    {
+      "artist_id": "saraga1.5_carnatic",
+      "name": "saraga1.5_carnatic",
+      "tradition": "Carnatic",
+      "total_tracks": 954,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "Mahati",
+      "name": "Mahati",
+      "tradition": "Carnatic",
+      "total_tracks": 199,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "Manda Sudharani",
+      "name": "Manda Sudharani",
+      "tradition": "Carnatic",
+      "total_tracks": 196,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "Cherthala Ranganatha Sharma",
+      "name": "Cherthala Ranganatha Sharma",
+      "tradition": "Carnatic",
+      "total_tracks": 181,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "Kanakadurga Venkatesh",
+      "name": "Kanakadurga Venkatesh",
+      "tradition": "Carnatic",
+      "total_tracks": 177,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "Modhumudi Sudhakar",
+      "name": "Modhumudi Sudhakar",
+      "tradition": "Carnatic",
+      "total_tracks": 174,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "Prema Rangarajan",
+      "name": "Prema Rangarajan",
+      "tradition": "Carnatic",
+      "total_tracks": 165,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "Vasundara Rajagopal",
+      "name": "Vasundara Rajagopal",
+      "tradition": "Carnatic",
+      "total_tracks": 163,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "Sumithra Vasudev",
+      "name": "Sumithra Vasudev",
+      "tradition": "Carnatic",
+      "total_tracks": 157,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "Srividya Janakiraman",
+      "name": "Srividya Janakiraman",
+      "tradition": "Carnatic",
+      "total_tracks": 155,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "Kuldeep Pai",
+      "name": "Kuldeep Pai",
+      "tradition": "Carnatic",
+      "total_tracks": 149,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "KP Nandini",
+      "name": "KP Nandini",
+      "tradition": "Carnatic",
+      "total_tracks": 147,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "Sumitra Nitin",
+      "name": "Sumitra Nitin",
+      "tradition": "Carnatic",
+      "total_tracks": 133,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "Angarai V K Rajasimhan",
+      "name": "Angarai V K Rajasimhan",
+      "tradition": "Carnatic",
+      "total_tracks": 125,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "Vidya Subramanian",
+      "name": "Vidya Subramanian",
+      "tradition": "Carnatic",
+      "total_tracks": 120,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "Salem Gayatri Venkatesan",
+      "name": "Salem Gayatri Venkatesan",
+      "tradition": "Carnatic",
+      "total_tracks": 112,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "N J Nandini",
+      "name": "N J Nandini",
+      "tradition": "Carnatic",
+      "total_tracks": 107,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "__MACOSX",
+      "name": "__MACOSX",
+      "tradition": "Hindustani",
+      "total_tracks": 84,
+      "sources": [
+        "saraga"
+      ]
+    },
+    {
+      "artist_id": "saraga1.5_hindustani",
+      "name": "saraga1.5_hindustani",
+      "tradition": "Hindustani",
+      "total_tracks": 84,
+      "sources": [
+        "saraga"
+      ]
+    }
+  ],
+  "cross_tradition_mappings": {
+    "total_mappings": 12,
+    "equivalence_types": {
+      "moderate": 1,
+      "similar": 8,
+      "perfect": 2,
+      "high": 1
+    }
+  },
+  "data_quality": {
+    "ragas_with_sources": 1340,
+    "artists_with_tracks": 19,
+    "tracks_with_audio": 4536,
+    "cross_tradition_coverage": 12
+  }
+}

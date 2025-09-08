@@ -1,0 +1,101 @@
+---
+export interface Props {
+  chart: string;
+  title?: string;
+  height?: string;
+}
+
+const { chart, title, height = "400px" } = Astro.props;
+---
+
+<div class="mermaid-container bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+  {title && (
+    <h4 class="text-lg font-semibold text-gray-900 mb-4 text-center">{title}</h4>
+  )}
+  <div class="mermaid-chart" style={`height: ${height}; overflow: auto;`}>
+    <pre class="mermaid text-sm">{chart}</pre>
+  </div>
+</div>
+
+<script>
+  // Load Mermaid dynamically
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.esm.min.mjs';
+  
+  // Initialize Mermaid
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'default',
+    themeVariables: {
+      primaryColor: '#3b82f6',
+      primaryTextColor: '#1f2937',
+      primaryBorderColor: '#d1d5db',
+      lineColor: '#6b7280',
+      secondaryColor: '#f3f4f6',
+      tertiaryColor: '#ffffff',
+      background: '#ffffff',
+      mainBkg: '#ffffff',
+      secondBkg: '#f9fafb',
+      tertiaryBkg: '#f3f4f6'
+    },
+    flowchart: {
+      htmlLabels: true,
+      curve: 'basis'
+    }
+  });
+
+  // Render all Mermaid charts on the page
+  document.addEventListener('DOMContentLoaded', () => {
+    mermaid.init();
+  });
+</script>
+
+<style>
+  .mermaid-container {
+    font-family: 'Geist Mono', monospace;
+  }
+  
+  .mermaid-chart {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  
+  .mermaid pre {
+    background: transparent !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Geist Mono', monospace !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* Mermaid chart styling */
+  .mermaid .node rect,
+  .mermaid .node circle,
+  .mermaid .node ellipse,
+  .mermaid .node polygon {
+    fill: #f3f4f6 !important;
+    stroke: #6b7280 !important;
+    stroke-width: 2px !important;
+  }
+  
+  .mermaid .node .label {
+    color: #1f2937 !important;
+    font-family: 'Geist Mono', monospace !important;
+    font-size: 12px !important;
+  }
+  
+  .mermaid .edgePath .path {
+    stroke: #6b7280 !important;
+    stroke-width: 2px !important;
+  }
+  
+  .mermaid .edgeLabel {
+    background: #ffffff !important;
+    color: #1f2937 !important;
+    font-family: 'Geist Mono', monospace !important;
+    font-size: 11px !important;
+  }
+</style>
+

@@ -1,0 +1,83 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Unified Indian Classical Music Dataset" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <title>{title}</title>
+  </head>
+  <body class="font-mono bg-white text-black antialiased">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  html {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  body {
+    line-height: 1.6;
+  }
+  
+  /* Neo-Brutal Button Styles */
+  .btn-neo-brutal {
+    @apply px-6 py-3 bg-black text-white font-bold border-4 border-black hover:bg-white hover:text-black transition-all shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] font-mono;
+  }
+  
+  .btn-neo-brutal-white {
+    @apply px-6 py-3 bg-white text-black font-bold border-4 border-black hover:bg-black hover:text-white transition-all shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] font-mono;
+  }
+  
+  /* Neo-Brutal Card Styles */
+  .card-neo-brutal {
+    @apply p-6 border-4 border-black bg-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)];
+  }
+  
+  /* Neo-Brutal Input Styles */
+  .input-neo-brutal {
+    @apply px-4 py-3 border-4 border-black bg-white font-mono focus:outline-none focus:ring-4 focus:ring-black focus:ring-opacity-50;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border: 2px solid #000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #000;
+    border: 2px solid #000;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333;
+  }
+</style>
+

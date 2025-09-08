@@ -1,0 +1,142 @@
+{
+  "timestamp": "2025-09-08T21:58:56.642000",
+  "processing_summary": {
+    "total_artists": 19,
+    "total_tracks": 4536,
+    "total_audio_files": 339,
+    "datasets_processed": 3,
+    "processing_timestamp": "2025-09-08T21:58:56.551327",
+    "processing_time_seconds": 0.055535078048706055
+  },
+  "tradition_distribution": {
+    "artists": {
+      "Carnatic": 17,
+      "Hindustani": 2
+    },
+    "tracks": {
+      "Carnatic": 4368,
+      "Hindustani": 168
+    }
+  },
+  "dataset_summary": {
+    "saraga_carnatic_melody_synth": {
+      "tradition": "Carnatic",
+      "artists": 16,
+      "tracks": 2460,
+      "audio_files": 339,
+      "size_mb": 0
+    },
+    "saraga1.5_carnatic": {
+      "tradition": "Carnatic",
+      "artists": 2,
+      "tracks": 1982,
+      "audio_files": 0,
+      "size_mb": 15453.650465965271
+    },
+    "saraga1.5_hindustani": {
+      "tradition": "Hindustani",
+      "artists": 2,
+      "tracks": 216,
+      "audio_files": 0,
+      "size_mb": 5455.90708732605
+    }
+  },
+  "top_artists": [
+    {
+      "name": "saraga1.5_carnatic",
+      "tradition": "Carnatic",
+      "total_tracks": 954,
+      "source": "saraga1.5"
+    },
+    {
+      "name": "Mahati",
+      "tradition": "Carnatic",
+      "total_tracks": 199,
+      "source": "saraga_carnatic_melody_synth"
+    },
+    {
+      "name": "Manda Sudharani",
+      "tradition": "Carnatic",
+      "total_tracks": 196,
+      "source": "saraga_carnatic_melody_synth"
+    },
+    {
+      "name": "Cherthala Ranganatha Sharma",
+      "tradition": "Carnatic",
+      "total_tracks": 181,
+      "source": "saraga_carnatic_melody_synth"
+    },
+    {
+      "name": "Kanakadurga Venkatesh",
+      "tradition": "Carnatic",
+      "total_tracks": 177,
+      "source": "saraga_carnatic_melody_synth"
+    },
+    {
+      "name": "Modhumudi Sudhakar",
+      "tradition": "Carnatic",
+      "total_tracks": 174,
+      "source": "saraga_carnatic_melody_synth"
+    },
+    {
+      "name": "Prema Rangarajan",
+      "tradition": "Carnatic",
+      "total_tracks": 165,
+      "source": "saraga_carnatic_melody_synth"
+    },
+    {
+      "name": "Vasundara Rajagopal",
+      "tradition": "Carnatic",
+      "total_tracks": 163,
+      "source": "saraga_carnatic_melody_synth"
+    },
+    {
+      "name": "Sumithra Vasudev",
+      "tradition": "Carnatic",
+      "total_tracks": 157,
+      "source": "saraga_carnatic_melody_synth"
+    },
+    {
+      "name": "Srividya Janakiraman",
+      "tradition": "Carnatic",
+      "total_tracks": 155,
+      "source": "saraga_carnatic_melody_synth"
+    },
+    {
+      "name": "Kuldeep Pai",
+      "tradition": "Carnatic",
+      "total_tracks": 149,
+      "source": "saraga_carnatic_melody_synth"
+    },
+    {
+      "name": "KP Nandini",
+      "tradition": "Carnatic",
+      "total_tracks": 147,
+      "source": "saraga_carnatic_melody_synth"
+    },
+    {
+      "name": "Sumitra Nitin",
+      "tradition": "Carnatic",
+      "total_tracks": 133,
+      "source": "saraga_carnatic_melody_synth"
+    },
+    {
+      "name": "Angarai V K Rajasimhan",
+      "tradition": "Carnatic",
+      "total_tracks": 125,
+      "source": "saraga_carnatic_melody_synth"
+    },
+    {
+      "name": "Vidya Subramanian",
+      "tradition": "Carnatic",
+      "total_tracks": 120,
+      "source": "saraga_carnatic_melody_synth"
+    }
+  ],
+  "data_quality_metrics": {
+    "artists_with_tracks": 19,
+    "unique_artists": 19,
+    "total_audio_files": 339,
+    "datasets_processed": 3
+  }
+}

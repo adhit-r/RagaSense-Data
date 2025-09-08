@@ -1,0 +1,189 @@
+{
+  "corrected_raga_count": 886,
+  "raga_combinations_count": 4497,
+  "original_raga_count": 5383,
+  "reduction_percentage": 83.54077651866989,
+  "tradition_distribution": {
+    "Carnatic": 602,
+    "Hindustani": 284
+  },
+  "combination_tradition_distribution": {
+    "Carnatic": 265,
+    "Hindustani": 4232
+  },
+  "source_distribution": {
+    "Ramanarunachalam": 886
+  },
+  "top_ragas_by_songs": [
+    [
+      "Unknownraga",
+      84645
+    ],
+    [
+      "Ragamalika",
+      3610
+    ],
+    [
+      "Kalyani",
+      2824
+    ],
+    [
+      "Bhairavi",
+      1998
+    ],
+    [
+      "Thodi",
+      1864
+    ],
+    [
+      "Kaanada",
+      1848
+    ],
+    [
+      "Sankarabharanam",
+      1703
+    ],
+    [
+      "Kambhoji",
+      1478
+    ],
+    [
+      "Karaharapriya",
+      1428
+    ],
+    [
+      "Mohanam",
+      1425
+    ],
+    [
+      "Kannada",
+      1381
+    ],
+    [
+      "Anandabhairavi",
+      1360
+    ],
+    [
+      "Poorvikalyani",
+      1227
+    ],
+    [
+      "Sindhubhairavi",
+      1179
+    ],
+    [
+      "Madhyamavathi",
+      1176
+    ],
+    [
+      "Hamsadhwani",
+      1170
+    ],
+    [
+      "Khamas",
+      1107
+    ],
+    [
+      "Behag",
+      1090
+    ],
+    [
+      "Kapi",
+      1074
+    ],
+    [
+      "Begada",
+      1019
+    ]
+  ],
+  "top_raga_combinations_by_songs": [
+    [
+      "Bilaval, Hameer",
+      71
+    ],
+    [
+      "Multani, Kafi",
+      63
+    ],
+    [
+      "Natakurinji, Shanmukapriya",
+      56
+    ],
+    [
+      "Bilaskani todi, Bhairavi",
+      50
+    ],
+    [
+      "Dharmavathi, Madhuvanthi",
+      36
+    ],
+    [
+      "Yagapriya, Thilang",
+      34
+    ],
+    [
+      "Lalit, Puriya dhanashree",
+      33
+    ],
+    [
+      "Maru bihag, Hamsadhwani",
+      33
+    ],
+    [
+      "Baradi, Saraswati",
+      26
+    ],
+    [
+      "Jogkauns, Mishra khamaj",
+      24
+    ],
+    [
+      "Salag varali, Todi",
+      22
+    ],
+    [
+      "Kaunsi kaanada, Malhar",
+      22
+    ],
+    [
+      "Bhairav, Bhairavi",
+      21
+    ],
+    [
+      "Mishra jogiya, Jogiya maand",
+      19
+    ],
+    [
+      "Zilaf, Yaman",
+      19
+    ],
+    [
+      "Saraswati, Megh",
+      17
+    ],
+    [
+      "Kedar, Nand",
+      17
+    ],
+    [
+      "Bhairavi, Mukhari",
+      16
+    ],
+    [
+      "Kadanakuthuhalam, Shanmukapriya",
+      16
+    ],
+    [
+      "Malahari, Saveri",
+      15
+    ]
+  ],
+  "reclassification_statistics": {
+    "total_entries_processed": 5383,
+    "individual_ragas": 886,
+    "combined_ragas": 4497,
+    "raga_combinations_created": 4497,
+    "songs_reclassified": 8040,
+    "errors": 0
+  }
+}

@@ -1,0 +1,426 @@
+{
+  "timestamp": "2025-09-07T17:22:35.250935",
+  "dataset_integration": {
+    "ramanarunachalam_songs": 10743,
+    "saraga_audio_files": 339,
+    "total_ragas": 6068,
+    "total_artists": 1276,
+    "total_composers": 443,
+    "cross_tradition_mappings": 10,
+    "youtube_videos": 10743,
+    "total_youtube_views": 49584885,
+    "total_duration_hours": 2199.813888888889,
+    "processing_time": 0
+  },
+  "data_quality": {
+    "high_quality_ragas": 0,
+    "high_quality_artists": 0,
+    "high_quality_composers": 0,
+    "cross_tradition_coverage": 10
+  },
+  "cross_tradition_analysis": {
+    "identical": [],
+    "similar": [
+      {
+        "raga_name": "Bhairavi",
+        "carnatic_name": "Bhairavi",
+        "hindustani_name": "Bhairavi",
+        "confidence": "high",
+        "evidence": "expert_knowledge"
+      },
+      {
+        "raga_name": "Kalyani",
+        "carnatic_name": "Kalyani",
+        "hindustani_name": "Yaman",
+        "confidence": "high",
+        "evidence": "expert_knowledge"
+      },
+      {
+        "raga_name": "Kambhoji",
+        "carnatic_name": "Kambhoji",
+        "hindustani_name": "Kafi",
+        "confidence": "medium",
+        "evidence": "expert_knowledge"
+      },
+      {
+        "raga_name": "Shankarabharanam",
+        "carnatic_name": "Shankarabharanam",
+        "hindustani_name": "Bilawal",
+        "confidence": "high",
+        "evidence": "expert_knowledge"
+      },
+      {
+        "raga_name": "Todi",
+        "carnatic_name": "Todi",
+        "hindustani_name": "Miyan ki Todi",
+        "confidence": "high",
+        "evidence": "expert_knowledge"
+      },
+      {
+        "raga_name": "Kharaharapriya",
+        "carnatic_name": "Kharaharapriya",
+        "hindustani_name": "Kafi",
+        "confidence": "medium",
+        "evidence": "expert_knowledge"
+      },
+      {
+        "raga_name": "Natabhairavi",
+        "carnatic_name": "Natabhairavi",
+        "hindustani_name": "Bhairavi",
+        "confidence": "medium",
+        "evidence": "expert_knowledge"
+      },
+      {
+        "raga_name": "Hindolam",
+        "carnatic_name": "Hindolam",
+        "hindustani_name": "Malkauns",
+        "confidence": "high",
+        "evidence": "expert_knowledge"
+      },
+      {
+        "raga_name": "Mohanam",
+        "carnatic_name": "Mohanam",
+        "hindustani_name": "Bhoop",
+        "confidence": "high",
+        "evidence": "expert_knowledge"
+      },
+      {
+        "raga_name": "Madhyamavati",
+        "carnatic_name": "Madhyamavati",
+        "hindustani_name": "Madhuvanti",
+        "confidence": "medium",
+        "evidence": "expert_knowledge"
+      }
+    ],
+    "derived": [],
+    "carnatic_unique": [],
+    "hindustani_unique": [],
+    "mapping_confidence": {
+      "Bhairavi": "high",
+      "Kalyani": "high",
+      "Kambhoji": "medium",
+      "Shankarabharanam": "high",
+      "Todi": "high",
+      "Kharaharapriya": "medium",
+      "Natabhairavi": "medium",
+      "Hindolam": "high",
+      "Mohanam": "high",
+      "Madhyamavati": "medium"
+    },
+    "total_mappings": 10
+  },
+  "top_ragas_by_songs": [
+    {
+      "raga_id": "Unknownraga",
+      "name": "Unknownraga",
+      "song_count": 68852
+    },
+    {
+      "raga_id": "Ragamalika",
+      "name": "Ragamalika",
+      "song_count": 9809
+    },
+    {
+      "raga_id": "Thodi",
+      "name": "Thodi",
+      "song_count": 6321
+    },
+    {
+      "raga_id": "Kalyani",
+      "name": "Kalyani",
+      "song_count": 6244
+    },
+    {
+      "raga_id": "Sankarabharanam",
+      "name": "Sankarabharanam",
+      "song_count": 5191
+    },
+    {
+      "raga_id": "Bhairavi",
+      "name": "Bhairavi",
+      "song_count": 4519
+    },
+    {
+      "raga_id": "Kambhoji",
+      "name": "Kambhoji",
+      "song_count": 4111
+    },
+    {
+      "raga_id": "Mohanam",
+      "name": "Mohanam",
+      "song_count": 3804
+    },
+    {
+      "raga_id": "Sindhubhairavi",
+      "name": "Sindhubhairavi",
+      "song_count": 3803
+    },
+    {
+      "raga_id": "Hamsadhwani",
+      "name": "Hamsadhwani",
+      "song_count": 3721
+    },
+    {
+      "raga_id": "Kapi",
+      "name": "Kapi",
+      "song_count": 3607
+    },
+    {
+      "raga_id": "Panthuvarali",
+      "name": "Panthuvarali",
+      "song_count": 3599
+    },
+    {
+      "raga_id": "Khamas",
+      "name": "Khamas",
+      "song_count": 3447
+    },
+    {
+      "raga_id": "Poorvikalyani",
+      "name": "Poorvikalyani",
+      "song_count": 3436
+    },
+    {
+      "raga_id": "Madhyamavathi",
+      "name": "Madhyamavathi",
+      "song_count": 3383
+    },
+    {
+      "raga_id": "Karaharapriya",
+      "name": "Karaharapriya",
+      "song_count": 3294
+    },
+    {
+      "raga_id": "Anandabhairavi",
+      "name": "Anandabhairavi",
+      "song_count": 3235
+    },
+    {
+      "raga_id": "Hindolam",
+      "name": "Hindolam",
+      "song_count": 2933
+    },
+    {
+      "raga_id": "Nata",
+      "name": "Nata",
+      "song_count": 2928
+    },
+    {
+      "raga_id": "Shanmukapriya",
+      "name": "Shanmukapriya",
+      "song_count": 2772
+    }
+  ],
+  "top_artists_by_songs": [
+    {
+      "artist_id": "M. Balamuralikrishna",
+      "name": "M. Balamuralikrishna",
+      "song_count": 11804
+    },
+    {
+      "artist_id": "M. S. Subbulakshmi",
+      "name": "M. S. Subbulakshmi",
+      "song_count": 9938
+    },
+    {
+      "artist_id": "M. L. Vasanthakumari",
+      "name": "M. L. Vasanthakumari",
+      "song_count": 8078
+    },
+    {
+      "artist_id": "K. V. Narayanaswamy",
+      "name": "K. V. Narayanaswamy",
+      "song_count": 6942
+    },
+    {
+      "artist_id": "Semmangudi Srinivasa Iyer",
+      "name": "Semmangudi Srinivasa Iyer",
+      "song_count": 6681
+    },
+    {
+      "artist_id": "M. D. Ramanathan",
+      "name": "M. D. Ramanathan",
+      "song_count": 6253
+    },
+    {
+      "artist_id": "Sudha Ragunathan",
+      "name": "Sudha Ragunathan",
+      "song_count": 5611
+    },
+    {
+      "artist_id": "Madurai Mani Iyer",
+      "name": "Madurai Mani Iyer",
+      "song_count": 5223
+    },
+    {
+      "artist_id": "T. N. Seshagopalan",
+      "name": "T. N. Seshagopalan",
+      "song_count": 5211
+    },
+    {
+      "artist_id": "Bhimsen Joshi",
+      "name": "Bhimsen Joshi",
+      "song_count": 5059
+    },
+    {
+      "artist_id": "T. M. Krishna",
+      "name": "T. M. Krishna",
+      "song_count": 4623
+    },
+    {
+      "artist_id": "Ravi Shankar",
+      "name": "Ravi Shankar",
+      "song_count": 4597
+    },
+    {
+      "artist_id": "Maharajapuram Santhanam",
+      "name": "Maharajapuram Santhanam",
+      "song_count": 4193
+    },
+    {
+      "artist_id": "Sanjay Subrahmanyan",
+      "name": "Sanjay Subrahmanyan",
+      "song_count": 4192
+    },
+    {
+      "artist_id": "G. N. Balasubramaniam",
+      "name": "G. N. Balasubramaniam",
+      "song_count": 4000
+    },
+    {
+      "artist_id": "D. K. Jayaraman",
+      "name": "D. K. Jayaraman",
+      "song_count": 3885
+    },
+    {
+      "artist_id": "U. Srinivas",
+      "name": "U. Srinivas",
+      "song_count": 3836
+    },
+    {
+      "artist_id": "Nithyasree Mahadevan",
+      "name": "Nithyasree Mahadevan",
+      "song_count": 3642
+    },
+    {
+      "artist_id": "T. V. Sankaranarayanan",
+      "name": "T. V. Sankaranarayanan",
+      "song_count": 3620
+    },
+    {
+      "artist_id": "Zakir Hussain",
+      "name": "Zakir Hussain",
+      "song_count": 3445
+    }
+  ],
+  "top_composers_by_songs": [
+    {
+      "composer_id": "Amir Khushrau",
+      "name": "Amir Khushrau",
+      "song_count": 0
+    },
+    {
+      "composer_id": "Purandara Dasa",
+      "name": "Purandara Dasa",
+      "song_count": 0
+    },
+    {
+      "composer_id": "UnknownComposer",
+      "name": "UnknownComposer",
+      "song_count": 0
+    },
+    {
+      "composer_id": "Bidaram Krishnappa",
+      "name": "Bidaram Krishnappa",
+      "song_count": 0
+    },
+    {
+      "composer_id": "Embar Raghava Narasimhan",
+      "name": "Embar Raghava Narasimhan",
+      "song_count": 0
+    },
+    {
+      "composer_id": "Akkarai Sornalatha",
+      "name": "Akkarai Sornalatha",
+      "song_count": 0
+    },
+    {
+      "composer_id": "K. V. Srinivasa Iyengar",
+      "name": "K. V. Srinivasa Iyengar",
+      "song_count": 0
+    },
+    {
+      "composer_id": "Mannargudi Sambasiva Bagavathar",
+      "name": "Mannargudi Sambasiva Bagavathar",
+      "song_count": 0
+    },
+    {
+      "composer_id": "Sadhu Om",
+      "name": "Sadhu Om",
+      "song_count": 0
+    },
+    {
+      "composer_id": "Prayaga Rangadasu",
+      "name": "Prayaga Rangadasu",
+      "song_count": 0
+    },
+    {
+      "composer_id": "Mangalam Ganapathi",
+      "name": "Mangalam Ganapathi",
+      "song_count": 0
+    },
+    {
+      "composer_id": "T. V. Gopalakrishnan",
+      "name": "T. V. Gopalakrishnan",
+      "song_count": 0
+    },
+    {
+      "composer_id": "S. Aravamudhachariar",
+      "name": "S. Aravamudhachariar",
+      "song_count": 0
+    },
+    {
+      "composer_id": "Papanasam Sivan",
+      "name": "Papanasam Sivan",
+      "song_count": 0
+    },
+    {
+      "composer_id": "Periyazhwar",
+      "name": "Periyazhwar",
+      "song_count": 0
+    },
+    {
+      "composer_id": "Tara Natarajan",
+      "name": "Tara Natarajan",
+      "song_count": 0
+    },
+    {
+      "composer_id": "Trivandrum Ayya",
+      "name": "Trivandrum Ayya",
+      "song_count": 0
+    },
+    {
+      "composer_id": "Abhayambika Balamuralikrishna",
+      "name": "Abhayambika Balamuralikrishna",
+      "song_count": 0
+    },
+    {
+      "composer_id": "Lakshmi Krishna",
+      "name": "Lakshmi Krishna",
+      "song_count": 0
+    },
+    {
+      "composer_id": "Sitaramayya",
+      "name": "Sitaramayya",
+      "song_count": 0
+    }
+  ],
+  "dataset_statistics": {
+    "carnatic_ragas": 0,
+    "hindustani_ragas": 0,
+    "carnatic_artists": 0,
+    "hindustani_artists": 0,
+    "carnatic_composers": 0,
+    "hindustani_composers": 0
+  }
+}

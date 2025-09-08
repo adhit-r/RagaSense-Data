@@ -1,0 +1,283 @@
+{
+  "timestamp": "2025-09-08T10:48:37.045082",
+  "cleaning_statistics": {
+    "original_count": 6068,
+    "combined_ragas_found": 4742,
+    "individual_ragas_created": 9484,
+    "duplicates_removed": 717,
+    "unknown_ragas_removed": 1,
+    "final_unique_count": 1340,
+    "carnatic_assigned": 1143,
+    "hindustani_assigned": 132,
+    "both_assigned": 65,
+    "unassigned": 0
+  },
+  "top_ragas_by_songs": [
+    {
+      "raga_id": "Ragamalika",
+      "name": "Ragamalika",
+      "song_count": 9810,
+      "tradition": "Carnatic"
+    },
+    {
+      "raga_id": "Thodi",
+      "name": "Thodi",
+      "song_count": 6321,
+      "tradition": "Carnatic"
+    },
+    {
+      "raga_id": "Kalyani",
+      "name": "Kalyani",
+      "song_count": 6244,
+      "tradition": "Both"
+    },
+    {
+      "raga_id": "Sankarabharanam",
+      "name": "Sankarabharanam",
+      "song_count": 5192,
+      "tradition": "Carnatic"
+    },
+    {
+      "raga_id": "Bhairavi",
+      "name": "Bhairavi",
+      "song_count": 4519,
+      "tradition": "Both"
+    },
+    {
+      "raga_id": "Kambhoji",
+      "name": "Kambhoji",
+      "song_count": 4112,
+      "tradition": "Carnatic"
+    },
+    {
+      "raga_id": "Mohanam",
+      "name": "Mohanam",
+      "song_count": 3805,
+      "tradition": "Carnatic"
+    },
+    {
+      "raga_id": "Sindhubhairavi",
+      "name": "Sindhubhairavi",
+      "song_count": 3804,
+      "tradition": "Both"
+    },
+    {
+      "raga_id": "Hamsadhwani",
+      "name": "Hamsadhwani",
+      "song_count": 3722,
+      "tradition": "Carnatic"
+    },
+    {
+      "raga_id": "Kapi",
+      "name": "Kapi",
+      "song_count": 3607,
+      "tradition": "Carnatic"
+    },
+    {
+      "raga_id": "Panthuvarali",
+      "name": "Panthuvarali",
+      "song_count": 3600,
+      "tradition": "Carnatic"
+    },
+    {
+      "raga_id": "Khamas",
+      "name": "Khamas",
+      "song_count": 3447,
+      "tradition": "Carnatic"
+    },
+    {
+      "raga_id": "Poorvikalyani",
+      "name": "Poorvikalyani",
+      "song_count": 3436,
+      "tradition": "Both"
+    },
+    {
+      "raga_id": "Madhyamavathi",
+      "name": "Madhyamavathi",
+      "song_count": 3383,
+      "tradition": "Carnatic"
+    },
+    {
+      "raga_id": "Karaharapriya",
+      "name": "Karaharapriya",
+      "song_count": 3294,
+      "tradition": "Carnatic"
+    },
+    {
+      "raga_id": "Anandabhairavi",
+      "name": "Anandabhairavi",
+      "song_count": 3236,
+      "tradition": "Both"
+    },
+    {
+      "raga_id": "Hindolam",
+      "name": "Hindolam",
+      "song_count": 2934,
+      "tradition": "Carnatic"
+    },
+    {
+      "raga_id": "Nata",
+      "name": "Nata",
+      "song_count": 2928,
+      "tradition": "Carnatic"
+    },
+    {
+      "raga_id": "Shanmukapriya",
+      "name": "Shanmukapriya",
+      "song_count": 2773,
+      "tradition": "Carnatic"
+    },
+    {
+      "raga_id": "Behag",
+      "name": "Behag",
+      "song_count": 2769,
+      "tradition": "Carnatic"
+    }
+  ],
+  "tradition_distribution": {
+    "Carnatic": 1143,
+    "Hindustani": 132,
+    "Both": 65
+  },
+  "combined_ragas_processed": [
+    {
+      "original_name": "Maand, Bhatiyali",
+      "individual_ragas": [
+        "Maand",
+        "Bhatiyali"
+      ],
+      "song_count": 1
+    },
+    {
+      "original_name": "Jaithashree, Basanti kedar",
+      "individual_ragas": [
+        "Jaithashree",
+        "Basanti kedar"
+      ],
+      "song_count": 1
+    },
+    {
+      "original_name": "Shyam kalyan, Bhairavi",
+      "individual_ragas": [
+        "Shyam kalyan",
+        "Bhairavi"
+      ],
+      "song_count": 5
+    },
+    {
+      "original_name": "Marva shree, Dhani",
+      "individual_ragas": [
+        "Marva shree",
+        "Dhani"
+      ],
+      "song_count": 1
+    },
+    {
+      "original_name": "Nat bihag, Bhairavi",
+      "individual_ragas": [
+        "Nat bihag",
+        "Bhairavi"
+      ],
+      "song_count": 2
+    },
+    {
+      "original_name": "Thilang, Pahadi",
+      "individual_ragas": [
+        "Thilang",
+        "Pahadi"
+      ],
+      "song_count": 1
+    },
+    {
+      "original_name": "Bairagi, Basant mukhari",
+      "individual_ragas": [
+        "Bairagi",
+        "Basant mukhari"
+      ],
+      "song_count": 1
+    },
+    {
+      "original_name": "Lalit bhatiyar, Bhatiyar",
+      "individual_ragas": [
+        "Lalit bhatiyar",
+        "Bhatiyar"
+      ],
+      "song_count": 2
+    },
+    {
+      "original_name": "Rageshree, Nat bhairav",
+      "individual_ragas": [
+        "Rageshree",
+        "Nat bhairav"
+      ],
+      "song_count": 1
+    },
+    {
+      "original_name": "Shankara, Bhairavi",
+      "individual_ragas": [
+        "Shankara",
+        "Bhairavi"
+      ],
+      "song_count": 2
+    }
+  ],
+  "duplicates_removed": [
+    {
+      "duplicate_name": "Maand",
+      "merged_into": "Maand",
+      "song_count": 1
+    },
+    {
+      "duplicate_name": "Bhatiyali",
+      "merged_into": "Bhatiyali",
+      "song_count": 0
+    },
+    {
+      "duplicate_name": "Jaithashree",
+      "merged_into": "Jaithashree",
+      "song_count": 1
+    },
+    {
+      "duplicate_name": "Basanti kedar",
+      "merged_into": "Basanti kedar",
+      "song_count": 1
+    },
+    {
+      "duplicate_name": "Shyam kalyan",
+      "merged_into": "Shyam kalyan",
+      "song_count": 0
+    },
+    {
+      "duplicate_name": "Bhairavi",
+      "merged_into": "Bhairavi",
+      "song_count": 0
+    },
+    {
+      "duplicate_name": "Marva shree",
+      "merged_into": "Marva shree",
+      "song_count": 1
+    },
+    {
+      "duplicate_name": "Dhani",
+      "merged_into": "Dhani",
+      "song_count": 1
+    },
+    {
+      "duplicate_name": "Nat bihag",
+      "merged_into": "Nat bihag",
+      "song_count": 1
+    },
+    {
+      "duplicate_name": "Thilang",
+      "merged_into": "Thilang",
+      "song_count": 0
+    }
+  ],
+  "unknown_ragas_removed": [
+    {
+      "raga_id": "Unknownraga",
+      "name": "Unknownraga",
+      "reason": "Unknown/placeholder entry"
+    }
+  ]
+}

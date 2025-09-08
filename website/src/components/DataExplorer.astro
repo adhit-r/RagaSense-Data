@@ -1,0 +1,214 @@
+---
+// Neo-Brutal Data Explorer Component
+---
+
+<section id="explorer" class="py-16 bg-black text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4 font-mono">DATA EXPLORER</h2>
+      <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+        Interactive exploration of the RagaSense-Data unified dataset
+      </p>
+    </div>
+
+    <!-- Explorer Interface -->
+    <div class="bg-white text-black p-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- Search Interface -->
+        <div class="space-y-6">
+          <h3 class="text-2xl font-bold font-mono">SEARCH</h3>
+          
+          <!-- Raga Search -->
+          <div>
+            <label class="block text-sm font-bold mb-2">RAGA SEARCH</label>
+            <div class="flex">
+              <input 
+                type="text" 
+                id="raga-search"
+                placeholder="Enter raga name..."
+                class="flex-1 px-4 py-3 border-2 border-black font-mono focus:outline-none focus:ring-2 focus:ring-black"
+              />
+              <button 
+                onclick="searchRaga()"
+                class="ml-2 px-6 py-3 bg-black text-white font-bold border-2 border-black hover:bg-white hover:text-black transition-all"
+              >
+                SEARCH
+              </button>
+            </div>
+          </div>
+
+          <!-- Artist Search -->
+          <div>
+            <label class="block text-sm font-bold mb-2">ARTIST SEARCH</label>
+            <div class="flex">
+              <input 
+                type="text" 
+                id="artist-search"
+                placeholder="Enter artist name..."
+                class="flex-1 px-4 py-3 border-2 border-black font-mono focus:outline-none focus:ring-2 focus:ring-black"
+              />
+              <button 
+                onclick="searchArtist()"
+                class="ml-2 px-6 py-3 bg-black text-white font-bold border-2 border-black hover:bg-white hover:text-black transition-all"
+              >
+                SEARCH
+              </button>
+            </div>
+          </div>
+
+          <!-- Quick Stats -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 border-2 border-black bg-gray-100">
+              <div class="text-2xl font-bold font-mono">1,340</div>
+              <div class="text-sm">RAGAS</div>
+            </div>
+            <div class="p-4 border-2 border-black bg-gray-100">
+              <div class="text-2xl font-bold font-mono">18</div>
+              <div class="text-sm">ARTISTS</div>
+            </div>
+            <div class="p-4 border-2 border-black bg-gray-100">
+              <div class="text-2xl font-bold font-mono">4,536</div>
+              <div class="text-sm">TRACKS</div>
+            </div>
+            <div class="p-4 border-2 border-black bg-gray-100">
+              <div class="text-2xl font-bold font-mono">12</div>
+              <div class="text-sm">MAPPINGS</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results Display -->
+        <div class="space-y-6">
+          <h3 class="text-2xl font-bold font-mono">RESULTS</h3>
+          
+          <div id="search-results" class="min-h-[400px] p-4 border-2 border-black bg-gray-50">
+            <div class="text-center text-gray-500">
+              <div class="w-16 h-16 mx-auto mb-4 border-2 border-black bg-white flex items-center justify-center">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </div>
+              <p class="font-mono">ENTER SEARCH TERMS TO EXPLORE DATA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Quality Notice -->
+    <div class="mt-8 p-6 border-4 border-yellow-400 bg-yellow-100 text-black">
+      <div class="flex items-center mb-2">
+        <div class="w-8 h-8 bg-yellow-400 border-2 border-black flex items-center justify-center mr-3">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+          </svg>
+        </div>
+        <h4 class="text-lg font-bold font-mono">DATA QUALITY NOTICE</h4>
+      </div>
+      <p class="text-sm">
+        Some data quality issues have been identified and corrected. The explorer shows cleaned, validated data.
+        Song counts may include duplicates or variations that need further analysis.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Mock data for demonstration
+  const mockData = {
+    ragas: [
+      { name: "Kalyani", tradition: "Both", songCount: 22, sources: ["ramanarunachalam", "saraga"] },
+      { name: "Bhairavi", tradition: "Both", songCount: 15, sources: ["ramanarunachalam", "saraga"] },
+      { name: "Shankarabharanam", tradition: "Carnatic", songCount: 8, sources: ["ramanarunachalam"] }
+    ],
+    artists: [
+      { name: "Vidya Subramanian", tradition: "Carnatic", trackCount: 120 },
+      { name: "Sumitra Nitin", tradition: "Carnatic", trackCount: 95 }
+    ]
+  };
+
+  function searchRaga() {
+    const query = document.getElementById('raga-search').value.toLowerCase();
+    const results = mockData.ragas.filter(raga => 
+      raga.name.toLowerCase().includes(query)
+    );
+    displayResults('raga', results);
+  }
+
+  function searchArtist() {
+    const query = document.getElementById('artist-search').value.toLowerCase();
+    const results = mockData.artists.filter(artist => 
+      artist.name.toLowerCase().includes(query)
+    );
+    displayResults('artist', results);
+  }
+
+  function displayResults(type, results) {
+    const container = document.getElementById('search-results');
+    
+    if (results.length === 0) {
+      container.innerHTML = `
+        <div class="text-center text-gray-500">
+          <div class="w-16 h-16 mx-auto mb-4 border-2 border-black bg-white flex items-center justify-center">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.29-1.009-5.824-2.709M15 6.291A7.962 7.962 0 0012 5c-2.34 0-4.29 1.009-5.824 2.709"></path>
+            </svg>
+          </div>
+          <p class="font-mono">NO RESULTS FOUND</p>
+        </div>
+      `;
+      return;
+    }
+
+    let html = `<div class="space-y-4">`;
+    
+    results.forEach(item => {
+      if (type === 'raga') {
+        html += `
+          <div class="p-4 border-2 border-black bg-white">
+            <div class="flex justify-between items-start mb-2">
+              <h4 class="text-lg font-bold font-mono">${item.name}</h4>
+              <span class="px-2 py-1 bg-black text-white text-xs font-mono">${item.tradition}</span>
+            </div>
+            <div class="text-sm text-gray-600 mb-2">
+              <div>SONGS: ${item.songCount}</div>
+              <div>SOURCES: ${item.sources.join(', ')}</div>
+            </div>
+            <button class="px-3 py-1 bg-gray-200 border border-black text-xs font-mono hover:bg-black hover:text-white transition-all">
+              VIEW DETAILS
+            </button>
+          </div>
+        `;
+      } else if (type === 'artist') {
+        html += `
+          <div class="p-4 border-2 border-black bg-white">
+            <div class="flex justify-between items-start mb-2">
+              <h4 class="text-lg font-bold font-mono">${item.name}</h4>
+              <span class="px-2 py-1 bg-black text-white text-xs font-mono">${item.tradition}</span>
+            </div>
+            <div class="text-sm text-gray-600 mb-2">
+              <div>TRACKS: ${item.trackCount}</div>
+            </div>
+            <button class="px-3 py-1 bg-gray-200 border border-black text-xs font-mono hover:bg-black hover:text-white transition-all">
+              VIEW TRACKS
+            </button>
+          </div>
+        `;
+      }
+    });
+    
+    html += `</div>`;
+    container.innerHTML = html;
+  }
+
+  // Add keyboard support
+  document.getElementById('raga-search').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') searchRaga();
+  });
+
+  document.getElementById('artist-search').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') searchArtist();
+  });
+</script>
+

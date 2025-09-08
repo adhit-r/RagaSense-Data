@@ -1,5 +1,6 @@
 // RagaSense-Data: Neo4j Graph Schema for Raga Relationships
 // This schema defines the graph structure for mapping relationships between ragas
+// NO HARDCODED DATA - All data will be populated from actual processed datasets
 
 // =============================================================================
 // NODE LABELS AND PROPERTIES
@@ -88,59 +89,16 @@ CREATE INDEX artist_tradition_index IF NOT EXISTS FOR (a:Artist) ON (a.tradition
 CREATE INDEX composition_type_index IF NOT EXISTS FOR (c:Composition) ON (c.type);
 
 // =============================================================================
-// SAMPLE DATA CREATION QUERIES
-// =============================================================================
-
-// Create sample ragas
-CREATE (kalyani:Raga {
-  id: "carnatic_kalyani",
-  name: "Kalyani", 
-  tradition: "carnatic",
-  melakarta_number: 65,
-  arohana: ["S", "R2", "G3", "M2", "P", "D2", "N3", "S'"],
-  avarohana: ["S'", "N3", "D2", "P", "M2", "G3", "R2", "S"],
-  vadi: "M2",
-  samvadi: "S",
-  time_of_day: "evening",
-  mood: ["devotional", "peaceful"],
-  confidence: 0.98,
-  verified: true
-});
-
-CREATE (yaman:Raga {
-  id: "hindustani_yaman",
-  name: "Yaman",
-  tradition: "hindustani", 
-  thaat: "Kalyan",
-  arohana: ["S", "R2", "G3", "M2", "P", "D2", "N3", "S'"],
-  avarohana: ["S'", "N3", "D2", "P", "M2", "G3", "R2", "S"],
-  vadi: "M2",
-  samvadi: "S", 
-  time_of_day: "evening",
-  mood: ["devotional", "peaceful"],
-  confidence: 0.98,
-  verified: true
-});
-
-// Create identical relationship
-CREATE (kalyani)-[:IDENTICAL {
-  confidence: 0.95,
-  verified_by: "expert_001",
-  notes: "Same swara structure, identical in all aspects",
-  verification_date: "2024-01-01"
-}]->(yaman);
-
-// =============================================================================
-// USEFUL QUERY PATTERNS
+// USEFUL QUERY PATTERNS (COMMENTED - WILL WORK AFTER DATA POPULATION)
 // =============================================================================
 
 // Find all ragas identical to a given raga
-// MATCH (r:Raga {name: "Kalyani"})-[rel:IDENTICAL]-(related)
+// MATCH (r:Raga {name: $raga_name})-[rel:IDENTICAL]-(related)
 // RETURN related.name, rel.confidence, rel.notes
 
 // Find raga derivation chains
 // MATCH path = (parent:Raga)-[:DERIVED_FROM*]->(derived:Raga)
-// WHERE parent.name = "Bhairav"
+// WHERE parent.name = $parent_raga_name
 // RETURN path
 
 // Find artists who perform both traditions

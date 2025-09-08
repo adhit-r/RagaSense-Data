@@ -1,0 +1,95 @@
+{
+  "timestamp": "2025-09-08T10:58:45.237544",
+  "data_sources": [
+    {
+      "name": "Ramanarunachalam-Carnatic",
+      "tradition": "Carnatic",
+      "file_count": 12892,
+      "size_mb": 250.94,
+      "metadata_files": 12855,
+      "audio_files": 37,
+      "youtube_links": 132
+    },
+    {
+      "name": "Ramanarunachalam-Hindustani",
+      "tradition": "Hindustani",
+      "file_count": 6042,
+      "size_mb": 87.56,
+      "metadata_files": 6005,
+      "audio_files": 37,
+      "youtube_links": 0
+    },
+    {
+      "name": "Saraga-Carnatic-Melody-Synth",
+      "tradition": "Carnatic",
+      "file_count": 340,
+      "size_mb": 3430.1,
+      "metadata_files": 1,
+      "audio_files": 339,
+      "youtube_links": 0
+    },
+    {
+      "name": "Saraga1.5-Carnatic",
+      "tradition": "Carnatic",
+      "file_count": 2480,
+      "size_mb": 13710.62,
+      "metadata_files": 498,
+      "audio_files": 1982,
+      "youtube_links": 0
+    },
+    {
+      "name": "Saraga1.5-Hindustani",
+      "tradition": "Hindustani",
+      "file_count": 432,
+      "size_mb": 3918.81,
+      "metadata_files": 216,
+      "audio_files": 216,
+      "youtube_links": 0
+    }
+  ],
+  "summary": {
+    "total_sources": 5,
+    "total_files": 22186,
+    "total_size_mb": 21398.04,
+    "total_metadata_files": 19575,
+    "total_audio_files": 2611,
+    "total_youtube_links": 66,
+    "unified_ragas": 0,
+    "unified_artists": 0,
+    "unified_composers": 0,
+    "unified_songs": 0
+  },
+  "youtube_analysis": {
+    "total_links": 66,
+    "unique_links": 66,
+    "sources_with_links": 1,
+    "links_by_source": {
+      "Ramanarunachalam-Carnatic": 132,
+      "Ramanarunachalam-Hindustani": 0,
+      "Saraga-Carnatic-Melody-Synth": 0,
+      "Saraga1.5-Carnatic": 0,
+      "Saraga1.5-Hindustani": 0
+    },
+    "sample_links": [
+      "https://www.youtube.com/watch?v=WG1apJh_sS4",
+      "https://www.youtube.com/watch?v=8K2xJtUoZfU",
+      "https://www.youtube.com/watch?v=6HpoSFiqok0",
+      "https://www.youtube.com/watch?v=sOoodQiLW1I",
+      "https://www.youtube.com/watch?v=1WDsZE81_rk",
+      "https://www.youtube.com/watch?v=BlbjcrQ8BFY",
+      "https://www.youtube.com/watch?v=wSEY0uO1AlI",
+      "https://www.youtube.com/watch?v=o0bHVLjV_pA",
+      "https://www.youtube.com/watch?v=HdFFavev9Tk",
+      "https://www.youtube.com/watch?v=yro1zRbVA_Y"
+    ]
+  },
+  "cross_tradition_mapping": {},
+  "data_quality": {
+    "ragas_with_multiple_sources": 0,
+    "artists_with_multiple_sources": 0,
+    "composers_with_multiple_sources": 0,
+    "songs_with_multiple_sources": 0,
+    "cross_tradition_ragas": 0
+  },
+  "recommendations": []
+}

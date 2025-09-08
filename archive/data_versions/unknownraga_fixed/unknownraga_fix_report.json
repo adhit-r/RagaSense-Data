@@ -1,0 +1,146 @@
+{
+  "timestamp": "2025-09-08T21:38:57.330525",
+  "fix_statistics": {
+    "cleaned_ragas_loaded": 1340,
+    "individual_ragas_identified": 1340,
+    "raga_combinations_identified": 0,
+    "unknownraga_found": false,
+    "final_individual_count": 0,
+    "final_combination_count": 0
+  },
+  "tradition_distribution": {
+    "Carnatic": 1143,
+    "Hindustani": 132,
+    "Both": 65
+  },
+  "top_individual_ragas": [
+    {
+      "raga_id": "Ragamalika",
+      "name": "Ragamalika",
+      "tradition": "Carnatic",
+      "song_count": 9810
+    },
+    {
+      "raga_id": "Thodi",
+      "name": "Thodi",
+      "tradition": "Carnatic",
+      "song_count": 6321
+    },
+    {
+      "raga_id": "Kalyani",
+      "name": "Kalyani",
+      "tradition": "Both",
+      "song_count": 6244
+    },
+    {
+      "raga_id": "Sankarabharanam",
+      "name": "Sankarabharanam",
+      "tradition": "Carnatic",
+      "song_count": 5192
+    },
+    {
+      "raga_id": "Bhairavi",
+      "name": "Bhairavi",
+      "tradition": "Both",
+      "song_count": 4519
+    },
+    {
+      "raga_id": "Kambhoji",
+      "name": "Kambhoji",
+      "tradition": "Carnatic",
+      "song_count": 4112
+    },
+    {
+      "raga_id": "Mohanam",
+      "name": "Mohanam",
+      "tradition": "Carnatic",
+      "song_count": 3805
+    },
+    {
+      "raga_id": "Sindhubhairavi",
+      "name": "Sindhubhairavi",
+      "tradition": "Both",
+      "song_count": 3804
+    },
+    {
+      "raga_id": "Hamsadhwani",
+      "name": "Hamsadhwani",
+      "tradition": "Carnatic",
+      "song_count": 3722
+    },
+    {
+      "raga_id": "Kapi",
+      "name": "Kapi",
+      "tradition": "Carnatic",
+      "song_count": 3607
+    },
+    {
+      "raga_id": "Panthuvarali",
+      "name": "Panthuvarali",
+      "tradition": "Carnatic",
+      "song_count": 3600
+    },
+    {
+      "raga_id": "Khamas",
+      "name": "Khamas",
+      "tradition": "Carnatic",
+      "song_count": 3447
+    },
+    {
+      "raga_id": "Poorvikalyani",
+      "name": "Poorvikalyani",
+      "tradition": "Both",
+      "song_count": 3436
+    },
+    {
+      "raga_id": "Madhyamavathi",
+      "name": "Madhyamavathi",
+      "tradition": "Carnatic",
+      "song_count": 3383
+    },
+    {
+      "raga_id": "Karaharapriya",
+      "name": "Karaharapriya",
+      "tradition": "Carnatic",
+      "song_count": 3294
+    },
+    {
+      "raga_id": "Anandabhairavi",
+      "name": "Anandabhairavi",
+      "tradition": "Both",
+      "song_count": 3236
+    },
+    {
+      "raga_id": "Hindolam",
+      "name": "Hindolam",
+      "tradition": "Carnatic",
+      "song_count": 2934
+    },
+    {
+      "raga_id": "Nata",
+      "name": "Nata",
+      "tradition": "Carnatic",
+      "song_count": 2928
+    },
+    {
+      "raga_id": "Shanmukapriya",
+      "name": "Shanmukapriya",
+      "tradition": "Carnatic",
+      "song_count": 2773
+    },
+    {
+      "raga_id": "Behag",
+      "name": "Behag",
+      "tradition": "Carnatic",
+      "song_count": 2769
+    }
+  ],
+  "top_raga_combinations": [],
+  "data_quality_improvements": {
+    "unknownraga_removed": true,
+    "individual_ragas_count": 1340,
+    "raga_combinations_count": 0,
+    "total_songs_in_individual_ragas": 282451,
+    "total_songs_in_combinations": 0
+  }
+}

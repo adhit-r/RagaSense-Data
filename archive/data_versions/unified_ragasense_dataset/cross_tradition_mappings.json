@@ -1,0 +1,91 @@
+{
+  "identical": [],
+  "similar": [
+    {
+      "raga_name": "Bhairavi",
+      "carnatic_name": "Bhairavi",
+      "hindustani_name": "Bhairavi",
+      "confidence": "high",
+      "evidence": "expert_knowledge"
+    },
+    {
+      "raga_name": "Kalyani",
+      "carnatic_name": "Kalyani",
+      "hindustani_name": "Yaman",
+      "confidence": "high",
+      "evidence": "expert_knowledge"
+    },
+    {
+      "raga_name": "Kambhoji",
+      "carnatic_name": "Kambhoji",
+      "hindustani_name": "Kafi",
+      "confidence": "medium",
+      "evidence": "expert_knowledge"
+    },
+    {
+      "raga_name": "Shankarabharanam",
+      "carnatic_name": "Shankarabharanam",
+      "hindustani_name": "Bilawal",
+      "confidence": "high",
+      "evidence": "expert_knowledge"
+    },
+    {
+      "raga_name": "Todi",
+      "carnatic_name": "Todi",
+      "hindustani_name": "Miyan ki Todi",
+      "confidence": "high",
+      "evidence": "expert_knowledge"
+    },
+    {
+      "raga_name": "Kharaharapriya",
+      "carnatic_name": "Kharaharapriya",
+      "hindustani_name": "Kafi",
+      "confidence": "medium",
+      "evidence": "expert_knowledge"
+    },
+    {
+      "raga_name": "Natabhairavi",
+      "carnatic_name": "Natabhairavi",
+      "hindustani_name": "Bhairavi",
+      "confidence": "medium",
+      "evidence": "expert_knowledge"
+    },
+    {
+      "raga_name": "Hindolam",
+      "carnatic_name": "Hindolam",
+      "hindustani_name": "Malkauns",
+      "confidence": "high",
+      "evidence": "expert_knowledge"
+    },
+    {
+      "raga_name": "Mohanam",
+      "carnatic_name": "Mohanam",
+      "hindustani_name": "Bhoop",
+      "confidence": "high",
+      "evidence": "expert_knowledge"
+    },
+    {
+      "raga_name": "Madhyamavati",
+      "carnatic_name": "Madhyamavati",
+      "hindustani_name": "Madhuvanti",
+      "confidence": "medium",
+      "evidence": "expert_knowledge"
+    }
+  ],
+  "derived": [],
+  "carnatic_unique": [],
+  "hindustani_unique": [],
+  "mapping_confidence": {
+    "Bhairavi": "high",
+    "Kalyani": "high",
+    "Kambhoji": "medium",
+    "Shankarabharanam": "high",
+    "Todi": "high",
+    "Kharaharapriya": "medium",
+    "Natabhairavi": "medium",
+    "Hindolam": "high",
+    "Mohanam": "high",
+    "Madhyamavati": "medium"
+  },
+  "total_mappings": 10
+}

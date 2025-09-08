@@ -1,0 +1,474 @@
+{
+  "timestamp": "2025-09-07T15:40:50.541220",
+  "processing_stats": {
+    "total_songs_found": 1584682,
+    "youtube_videos_found": 1584682,
+    "unique_ragas_count": 5382,
+    "unique_artists_count": 737,
+    "unique_composers_count": 441,
+    "total_views": 18349231747,
+    "total_duration_minutes": 28782477.966665864,
+    "processing_time": 5.487221002578735
+  },
+  "summary": {
+    "total_songs": 1584682,
+    "youtube_videos": 1584682,
+    "unique_ragas": 5382,
+    "unique_artists": 737,
+    "unique_composers": 441,
+    "total_views": 18349231747,
+    "total_duration_hours": 479707.9661110977,
+    "average_views_per_song": 11579.125494578722,
+    "average_duration_minutes": 18.162936139027178
+  },
+  "top_ragas_by_songs": [
+    {
+      "raga_id": 1,
+      "song_count": 55449
+    },
+    {
+      "raga_id": 2,
+      "song_count": 38197
+    },
+    {
+      "raga_id": 3,
+      "song_count": 34655
+    },
+    {
+      "raga_id": 5,
+      "song_count": 29505
+    },
+    {
+      "raga_id": 4,
+      "song_count": 28295
+    },
+    {
+      "raga_id": 6,
+      "song_count": 23625
+    },
+    {
+      "raga_id": 8,
+      "song_count": 21569
+    },
+    {
+      "raga_id": 11,
+      "song_count": 21230
+    },
+    {
+      "raga_id": 12,
+      "song_count": 20707
+    },
+    {
+      "raga_id": 17,
+      "song_count": 19595
+    },
+    {
+      "raga_id": 13,
+      "song_count": 19437
+    },
+    {
+      "raga_id": 16,
+      "song_count": 19259
+    },
+    {
+      "raga_id": 7,
+      "song_count": 19179
+    },
+    {
+      "raga_id": 18,
+      "song_count": 19002
+    },
+    {
+      "raga_id": 14,
+      "song_count": 18615
+    },
+    {
+      "raga_id": 26,
+      "song_count": 17917
+    },
+    {
+      "raga_id": 10,
+      "song_count": 17412
+    },
+    {
+      "raga_id": 20,
+      "song_count": 16602
+    },
+    {
+      "raga_id": 23,
+      "song_count": 16468
+    },
+    {
+      "raga_id": 19,
+      "song_count": 16093
+    }
+  ],
+  "top_artists_by_songs": [
+    {
+      "artist_id": 1,
+      "song_count": 49093
+    },
+    {
+      "artist_id": 3,
+      "song_count": 48037
+    },
+    {
+      "artist_id": 2,
+      "song_count": 48011
+    },
+    {
+      "artist_id": 7,
+      "song_count": 35236
+    },
+    {
+      "artist_id": 16,
+      "song_count": 34832
+    },
+    {
+      "artist_id": 8,
+      "song_count": 33634
+    },
+    {
+      "artist_id": 5,
+      "song_count": 27408
+    },
+    {
+      "artist_id": 11,
+      "song_count": 27248
+    },
+    {
+      "artist_id": 17,
+      "song_count": 25630
+    },
+    {
+      "artist_id": 6,
+      "song_count": 23606
+    },
+    {
+      "artist_id": 9,
+      "song_count": 22693
+    },
+    {
+      "artist_id": 12,
+      "song_count": 22282
+    },
+    {
+      "artist_id": 23,
+      "song_count": 21006
+    },
+    {
+      "artist_id": 10,
+      "song_count": 20791
+    },
+    {
+      "artist_id": 13,
+      "song_count": 20506
+    },
+    {
+      "artist_id": 21,
+      "song_count": 20128
+    },
+    {
+      "artist_id": 18,
+      "song_count": 18839
+    },
+    {
+      "artist_id": 4,
+      "song_count": 17690
+    },
+    {
+      "artist_id": 63,
+      "song_count": 17257
+    },
+    {
+      "artist_id": 32,
+      "song_count": 16123
+    }
+  ],
+  "top_composers_by_songs": [
+    {
+      "composer_id": 1,
+      "song_count": 236397
+    },
+    {
+      "composer_id": 2,
+      "song_count": 104726
+    },
+    {
+      "composer_id": 5,
+      "song_count": 46091
+    },
+    {
+      "composer_id": 4,
+      "song_count": 36667
+    },
+    {
+      "composer_id": 6,
+      "song_count": 33477
+    },
+    {
+      "composer_id": 3,
+      "song_count": 26262
+    },
+    {
+      "composer_id": 7,
+      "song_count": 17320
+    },
+    {
+      "composer_id": 9,
+      "song_count": 16868
+    },
+    {
+      "composer_id": 11,
+      "song_count": 13966
+    },
+    {
+      "composer_id": 12,
+      "song_count": 13054
+    },
+    {
+      "composer_id": 20,
+      "song_count": 12856
+    },
+    {
+      "composer_id": 2001,
+      "song_count": 12843
+    },
+    {
+      "composer_id": 10,
+      "song_count": 11427
+    },
+    {
+      "composer_id": 16,
+      "song_count": 10966
+    },
+    {
+      "composer_id": 13,
+      "song_count": 10685
+    },
+    {
+      "composer_id": 14,
+      "song_count": 9235
+    },
+    {
+      "composer_id": 15,
+      "song_count": 8094
+    },
+    {
+      "composer_id": 8,
+      "song_count": 7204
+    },
+    {
+      "composer_id": 2006,
+      "song_count": 7083
+    },
+    {
+      "composer_id": 25,
+      "song_count": 6729
+    }
+  ],
+  "most_viewed_songs": [
+    {
+      "song_id": 363,
+      "views": 6439697,
+      "youtube_url": "https://www.youtube.com/watch?v=RBrBtdAGiNM"
+    },
+    {
+      "song_id": 6921,
+      "views": 2377936,
+      "youtube_url": "https://www.youtube.com/watch?v=5Q8LJk11nq8"
+    },
+    {
+      "song_id": 7164,
+      "views": 2087023,
+      "youtube_url": "https://www.youtube.com/watch?v=TWU181MBVSU"
+    },
+    {
+      "song_id": 7165,
+      "views": 2087023,
+      "youtube_url": "https://www.youtube.com/watch?v=TWU181MBVSU"
+    },
+    {
+      "song_id": 7166,
+      "views": 2087023,
+      "youtube_url": "https://www.youtube.com/watch?v=TWU181MBVSU"
+    },
+    {
+      "song_id": 3232,
+      "views": 2087023,
+      "youtube_url": "https://www.youtube.com/watch?v=TWU181MBVSU"
+    },
+    {
+      "song_id": 6876,
+      "views": 1663246,
+      "youtube_url": "https://www.youtube.com/watch?v=Mfol24VZ9xE"
+    },
+    {
+      "song_id": 7732,
+      "views": 1442867,
+      "youtube_url": "https://www.youtube.com/watch?v=EZ0CgM7qXvY"
+    },
+    {
+      "song_id": 2751,
+      "views": 1054170,
+      "youtube_url": "https://www.youtube.com/watch?v=OBHPvyXoLCc"
+    },
+    {
+      "song_id": 9334,
+      "views": 911629,
+      "youtube_url": "https://www.youtube.com/watch?v=seEumv09Wg4"
+    },
+    {
+      "song_id": 126,
+      "views": 868823,
+      "youtube_url": "https://www.youtube.com/watch?v=xo5ji4537uc"
+    },
+    {
+      "song_id": 7207,
+      "views": 656139,
+      "youtube_url": "https://www.youtube.com/watch?v=kUvYeK189jU"
+    },
+    {
+      "song_id": 8892,
+      "views": 545670,
+      "youtube_url": "https://www.youtube.com/watch?v=Fg-yyMre__w"
+    },
+    {
+      "song_id": 8046,
+      "views": 426273,
+      "youtube_url": "https://www.youtube.com/watch?v=MiPzJEwWZpA"
+    },
+    {
+      "song_id": 694,
+      "views": 412632,
+      "youtube_url": "https://www.youtube.com/watch?v=3AgQ4sBIHCU"
+    },
+    {
+      "song_id": 6675,
+      "views": 408485,
+      "youtube_url": "https://www.youtube.com/watch?v=Kwsx1ilODDA"
+    },
+    {
+      "song_id": 22259,
+      "views": 405935,
+      "youtube_url": "https://www.youtube.com/watch?v=Xyl3lBpI0HY"
+    },
+    {
+      "song_id": 5797,
+      "views": 366520,
+      "youtube_url": "https://www.youtube.com/watch?v=7l_UTktSHW4"
+    },
+    {
+      "song_id": 1174,
+      "views": 360276,
+      "youtube_url": "https://www.youtube.com/watch?v=EEAkDazrGRY"
+    },
+    {
+      "song_id": 6721,
+      "views": 329909,
+      "youtube_url": "https://www.youtube.com/watch?v=D1NMc8XR6lU"
+    }
+  ],
+  "longest_songs": [
+    {
+      "song_id": 21420,
+      "duration_minutes": 267.65,
+      "youtube_url": "https://www.youtube.com/watch?v=YWHM3DMAVg0"
+    },
+    {
+      "song_id": 20692,
+      "duration_minutes": 267.4166666666667,
+      "youtube_url": "https://www.youtube.com/watch?v=Jwu-zbTyE0g"
+    },
+    {
+      "song_id": 20411,
+      "duration_minutes": 259.73333333333335,
+      "youtube_url": "https://www.youtube.com/watch?v=iQigwfbHg-k"
+    },
+    {
+      "song_id": 20038,
+      "duration_minutes": 258.3666666666667,
+      "youtube_url": "https://www.youtube.com/watch?v=gmsvfnfqneg"
+    },
+    {
+      "song_id": 20340,
+      "duration_minutes": 244.73333333333332,
+      "youtube_url": "https://www.youtube.com/watch?v=tWINclXQUrE"
+    },
+    {
+      "song_id": 20011,
+      "duration_minutes": 244.33333333333334,
+      "youtube_url": "https://www.youtube.com/watch?v=2JDEZdlibqo"
+    },
+    {
+      "song_id": 22258,
+      "duration_minutes": 223.16666666666666,
+      "youtube_url": "https://www.youtube.com/watch?v=SNl9Y_rkIpk"
+    },
+    {
+      "song_id": 20554,
+      "duration_minutes": 216.68333333333334,
+      "youtube_url": "https://www.youtube.com/watch?v=1sQxvPmg6Uk"
+    },
+    {
+      "song_id": 20622,
+      "duration_minutes": 202.4,
+      "youtube_url": "https://www.youtube.com/watch?v=WJsoJguSJbg"
+    },
+    {
+      "song_id": 20081,
+      "duration_minutes": 197.7,
+      "youtube_url": "https://www.youtube.com/watch?v=TBz3QHDimv0"
+    },
+    {
+      "song_id": 21211,
+      "duration_minutes": 196.1,
+      "youtube_url": "https://www.youtube.com/watch?v=HrNAKUogpfk"
+    },
+    {
+      "song_id": 20231,
+      "duration_minutes": 188.06666666666666,
+      "youtube_url": "https://www.youtube.com/watch?v=pgY4ujN_hbo"
+    },
+    {
+      "song_id": 22004,
+      "duration_minutes": 183.68333333333334,
+      "youtube_url": "https://www.youtube.com/watch?v=k5pUxuFXRF8"
+    },
+    {
+      "song_id": 20080,
+      "duration_minutes": 183.41666666666666,
+      "youtube_url": "https://www.youtube.com/watch?v=0Q6eoB04_fk"
+    },
+    {
+      "song_id": 20758,
+      "duration_minutes": 182.11666666666667,
+      "youtube_url": "https://www.youtube.com/watch?v=U9bTHOHtgZU"
+    },
+    {
+      "song_id": 20421,
+      "duration_minutes": 181.96666666666667,
+      "youtube_url": "https://www.youtube.com/watch?v=pcXvBOJ9ZX4"
+    },
+    {
+      "song_id": 20726,
+      "duration_minutes": 180.93333333333334,
+      "youtube_url": "https://www.youtube.com/watch?v=0i2SpyJakvE"
+    },
+    {
+      "song_id": 20753,
+      "duration_minutes": 179.06666666666666,
+      "youtube_url": "https://www.youtube.com/watch?v=iwWOSvMTO3A"
+    },
+    {
+      "song_id": 21237,
+      "duration_minutes": 178.53333333333333,
+      "youtube_url": "https://www.youtube.com/watch?v=Jc2DsW-qDwM"
+    },
+    {
+      "song_id": 21235,
+      "duration_minutes": 178.08333333333334,
+      "youtube_url": "https://www.youtube.com/watch?v=-EPHBy9b1Uc"
+    }
+  ]
+}

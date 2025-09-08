@@ -1,0 +1,812 @@
+{
+  "tradition": "carnatic",
+  "processing_timestamp": "2025-09-09T01:37:03.727543",
+  "total_audio_files": 1982,
+  "total_metadata_files": 498,
+  "sample_tracks": [
+    {
+      "file": "saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Shri Subramanyaya Namaste/Chaitra Sairam - Shri Subramanyaya Namaste.json",
+      "metadata": {
+        "raaga": [
+          {
+            "uuid": "f0866e71-33b2-47db-ab75-0808c41f2401",
+            "name": "Kāṁbhōji"
+          }
+        ],
+        "form": [
+          {
+            "name": "Kriti"
+          }
+        ],
+        "title": "Shri Subramanyaya Namaste",
+        "work": [
+          {
+            "mbid": "3edf1388-7fe0-4e77-9f41-922a699ef3ac",
+            "title": "Shri subrahmanyaya namaste manasija koti lavanya"
+          }
+        ],
+        "length": 2577188,
+        "taala": [
+          {
+            "uuid": "d498f683-5a26-414f-8f00-2319a1fcdae3",
+            "name": "Tiśra-jāti ēka"
+          }
+        ],
+        "album_artists": [
+          {
+            "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+            "name": "Chaitra Sairam"
+          }
+        ],
+        "mbid": "ba04f4c1-28cb-4e22-b6c8-cb949426ad0b",
+        "artists": [
+          {
+            "instrument": {
+              "mbid": "f689271c-37bc-4c49-92a3-a14b15ee5d0e",
+              "name": "Mridangam"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "07b755f5-9202-42fe-81a8-820af66d2f51",
+              "name": "B Sivaraman"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "089f123c-0f7d-4105-a64e-49de81ca8fa4",
+              "name": "Violin"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "621cbed8-5bb8-4579-89fa-c5ab15a69f2b",
+              "name": "S P Anantapadmanabha"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "d92884b7-ee0c-46d5-96f3-918196ba8c5b",
+              "name": "Voice"
+            },
+            "attributes": "lead vocals",
+            "lead": true,
+            "artist": {
+              "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+              "name": "Chaitra Sairam"
+            }
+          }
+        ],
+        "concert": [
+          {
+            "mbid": "f0784dac-a546-402f-9ade-c5765b4179ee",
+            "title": "Chaitra Sairam at Arkay"
+          }
+        ]
+      }
+    },
+    {
+      "file": "saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Mamava Pattabhi Rama/Chaitra Sairam - Mamava Pattabhi Rama.json",
+      "metadata": {
+        "raaga": [
+          {
+            "uuid": "698b0206-a72a-4190-a74f-b5bed3c82b4a",
+            "name": "Maṇirangu"
+          }
+        ],
+        "form": [
+          {
+            "name": "Kriti"
+          }
+        ],
+        "title": "Mamava Pattabhi Rama",
+        "work": [
+          {
+            "mbid": "ba2a294b-1d14-420b-b90f-a7b1431d620f",
+            "title": "Mamava Pattabhi Rama"
+          }
+        ],
+        "length": 270968,
+        "taala": [
+          {
+            "uuid": "7eb02ed9-2dcb-471f-9a8a-a09aa5cea633",
+            "name": "Miśra chāpu"
+          }
+        ],
+        "album_artists": [
+          {
+            "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+            "name": "Chaitra Sairam"
+          }
+        ],
+        "mbid": "1c474824-d8a9-43c8-8c2d-6b59e945e3a6",
+        "artists": [
+          {
+            "instrument": {
+              "mbid": "f689271c-37bc-4c49-92a3-a14b15ee5d0e",
+              "name": "Mridangam"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "07b755f5-9202-42fe-81a8-820af66d2f51",
+              "name": "B Sivaraman"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "089f123c-0f7d-4105-a64e-49de81ca8fa4",
+              "name": "Violin"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "621cbed8-5bb8-4579-89fa-c5ab15a69f2b",
+              "name": "S P Anantapadmanabha"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "d92884b7-ee0c-46d5-96f3-918196ba8c5b",
+              "name": "Voice"
+            },
+            "attributes": "lead vocals",
+            "lead": true,
+            "artist": {
+              "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+              "name": "Chaitra Sairam"
+            }
+          }
+        ],
+        "concert": [
+          {
+            "mbid": "f0784dac-a546-402f-9ade-c5765b4179ee",
+            "title": "Chaitra Sairam at Arkay"
+          }
+        ]
+      }
+    },
+    {
+      "file": "saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Kamalamba Samrakshatu/Chaitra Sairam - Kamalamba Samrakshatu.json",
+      "metadata": {
+        "raaga": [
+          {
+            "uuid": "e18fcaa7-1f9c-4f09-b627-0687481f4ec7",
+            "name": "Ānandabhairavi"
+          }
+        ],
+        "form": [
+          {
+            "name": "Kriti"
+          }
+        ],
+        "title": "Kamalamba Samrakshatu",
+        "work": [
+          {
+            "mbid": "bf3629ff-4142-428b-bca1-93964ac06f08",
+            "title": "Kamalamba"
+          }
+        ],
+        "length": 662857,
+        "taala": [
+          {
+            "uuid": "7eb02ed9-2dcb-471f-9a8a-a09aa5cea633",
+            "name": "Miśra chāpu"
+          }
+        ],
+        "album_artists": [
+          {
+            "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+            "name": "Chaitra Sairam"
+          }
+        ],
+        "mbid": "a8ecff2f-f2ce-406f-a7a9-a5976b99521c",
+        "artists": [
+          {
+            "instrument": {
+              "mbid": "f689271c-37bc-4c49-92a3-a14b15ee5d0e",
+              "name": "Mridangam"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "07b755f5-9202-42fe-81a8-820af66d2f51",
+              "name": "B Sivaraman"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "089f123c-0f7d-4105-a64e-49de81ca8fa4",
+              "name": "Violin"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "621cbed8-5bb8-4579-89fa-c5ab15a69f2b",
+              "name": "S P Anantapadmanabha"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "d92884b7-ee0c-46d5-96f3-918196ba8c5b",
+              "name": "Voice"
+            },
+            "attributes": "lead vocals",
+            "lead": true,
+            "artist": {
+              "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+              "name": "Chaitra Sairam"
+            }
+          }
+        ],
+        "concert": [
+          {
+            "mbid": "f0784dac-a546-402f-9ade-c5765b4179ee",
+            "title": "Chaitra Sairam at Arkay"
+          }
+        ]
+      }
+    },
+    {
+      "file": "saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Govardhana Girisham/Chaitra Sairam - Govardhana Girisham.json",
+      "metadata": {
+        "raaga": [
+          {
+            "uuid": "26553105-ee8c-4c90-aabf-18f16e37d603",
+            "name": "Hindōḷaṁ"
+          }
+        ],
+        "form": [
+          {
+            "name": "Kriti"
+          }
+        ],
+        "title": "Govardhana Girisham",
+        "work": [
+          {
+            "mbid": "c5cd85c3-3676-4b15-8229-ea06dc5ec785",
+            "title": "Govardhana Girisham"
+          }
+        ],
+        "length": 332538,
+        "taala": [
+          {
+            "uuid": "8c6c26db-e01a-4eef-ae0b-9f7e31a926e8",
+            "name": "Rūpaka"
+          }
+        ],
+        "album_artists": [
+          {
+            "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+            "name": "Chaitra Sairam"
+          }
+        ],
+        "mbid": "93f38e28-f411-4b06-9494-91232649a635",
+        "artists": [
+          {
+            "instrument": {
+              "mbid": "f689271c-37bc-4c49-92a3-a14b15ee5d0e",
+              "name": "Mridangam"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "07b755f5-9202-42fe-81a8-820af66d2f51",
+              "name": "B Sivaraman"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "089f123c-0f7d-4105-a64e-49de81ca8fa4",
+              "name": "Violin"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "621cbed8-5bb8-4579-89fa-c5ab15a69f2b",
+              "name": "S P Anantapadmanabha"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "d92884b7-ee0c-46d5-96f3-918196ba8c5b",
+              "name": "Voice"
+            },
+            "attributes": "lead vocals",
+            "lead": true,
+            "artist": {
+              "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+              "name": "Chaitra Sairam"
+            }
+          }
+        ],
+        "concert": [
+          {
+            "mbid": "f0784dac-a546-402f-9ade-c5765b4179ee",
+            "title": "Chaitra Sairam at Arkay"
+          }
+        ]
+      }
+    },
+    {
+      "file": "saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Ardhanareeshwaram/Chaitra Sairam - Ardhanareeshwaram.json",
+      "metadata": {
+        "raaga": [],
+        "form": [
+          {
+            "name": "Kriti"
+          }
+        ],
+        "title": "Ardhanareeshwaram",
+        "work": [
+          {
+            "mbid": "869ce608-91dc-4667-a59a-2f2a3333e5fa",
+            "title": "Ardhanarishwaram"
+          }
+        ],
+        "length": 237975,
+        "taala": [
+          {
+            "uuid": "8c6c26db-e01a-4eef-ae0b-9f7e31a926e8",
+            "name": "Rūpaka"
+          }
+        ],
+        "album_artists": [
+          {
+            "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+            "name": "Chaitra Sairam"
+          }
+        ],
+        "mbid": "9ab5de50-9a19-46cc-93d7-867f0ebb0da4",
+        "artists": [
+          {
+            "instrument": {
+              "mbid": "f689271c-37bc-4c49-92a3-a14b15ee5d0e",
+              "name": "Mridangam"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "07b755f5-9202-42fe-81a8-820af66d2f51",
+              "name": "B Sivaraman"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "089f123c-0f7d-4105-a64e-49de81ca8fa4",
+              "name": "Violin"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "621cbed8-5bb8-4579-89fa-c5ab15a69f2b",
+              "name": "S P Anantapadmanabha"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "d92884b7-ee0c-46d5-96f3-918196ba8c5b",
+              "name": "Voice"
+            },
+            "attributes": "lead vocals",
+            "lead": true,
+            "artist": {
+              "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+              "name": "Chaitra Sairam"
+            }
+          }
+        ],
+        "concert": [
+          {
+            "mbid": "f0784dac-a546-402f-9ade-c5765b4179ee",
+            "title": "Chaitra Sairam at Arkay"
+          }
+        ]
+      }
+    },
+    {
+      "file": "saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Anandaamrutakarshini/Chaitra Sairam - Anandaamrutakarshini.json",
+      "metadata": {
+        "raaga": [
+          {
+            "uuid": "54bee7b6-2d11-46f1-a3fc-32bb27964f88",
+            "name": "Amṛtavarṣiṇi"
+          }
+        ],
+        "form": [
+          {
+            "name": "Kriti"
+          }
+        ],
+        "title": "Anandaamrutakarshini",
+        "work": [
+          {
+            "mbid": "d2294951-9ee5-4ad4-ad09-3e27f87569ce",
+            "title": "Anandamruta Karshini"
+          }
+        ],
+        "length": 407771,
+        "taala": [
+          {
+            "uuid": "c788c38a-b53a-48cb-b7bf-d11769260c4d",
+            "name": "Ādi"
+          }
+        ],
+        "album_artists": [
+          {
+            "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+            "name": "Chaitra Sairam"
+          }
+        ],
+        "mbid": "833331e9-7907-4e28-b60d-8c8186931dfd",
+        "artists": [
+          {
+            "instrument": {
+              "mbid": "f689271c-37bc-4c49-92a3-a14b15ee5d0e",
+              "name": "Mridangam"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "07b755f5-9202-42fe-81a8-820af66d2f51",
+              "name": "B Sivaraman"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "089f123c-0f7d-4105-a64e-49de81ca8fa4",
+              "name": "Violin"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "621cbed8-5bb8-4579-89fa-c5ab15a69f2b",
+              "name": "S P Anantapadmanabha"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "d92884b7-ee0c-46d5-96f3-918196ba8c5b",
+              "name": "Voice"
+            },
+            "attributes": "lead vocals",
+            "lead": true,
+            "artist": {
+              "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+              "name": "Chaitra Sairam"
+            }
+          }
+        ],
+        "concert": [
+          {
+            "mbid": "f0784dac-a546-402f-9ade-c5765b4179ee",
+            "title": "Chaitra Sairam at Arkay"
+          }
+        ]
+      }
+    },
+    {
+      "file": "saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Rakta Ganapatim/Chaitra Sairam - Rakta Ganapatim.json",
+      "metadata": {
+        "raaga": [
+          {
+            "uuid": "39821826-3327-41d7-9cd5-e22fe7b08360",
+            "name": "Mōhanaṁ"
+          }
+        ],
+        "form": [
+          {
+            "name": "Kriti"
+          }
+        ],
+        "title": "Rakta Ganapatim",
+        "work": [
+          {
+            "mbid": "c7d574e6-4292-40bb-bc95-3774dcf394a6",
+            "title": "Rakta Ganapatim"
+          }
+        ],
+        "length": 420153,
+        "taala": [
+          {
+            "uuid": "c788c38a-b53a-48cb-b7bf-d11769260c4d",
+            "name": "Ādi"
+          }
+        ],
+        "album_artists": [
+          {
+            "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+            "name": "Chaitra Sairam"
+          }
+        ],
+        "mbid": "0a1c2ae7-e933-458d-afac-fa081338d5de",
+        "artists": [
+          {
+            "instrument": {
+              "mbid": "f689271c-37bc-4c49-92a3-a14b15ee5d0e",
+              "name": "Mridangam"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "07b755f5-9202-42fe-81a8-820af66d2f51",
+              "name": "B Sivaraman"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "089f123c-0f7d-4105-a64e-49de81ca8fa4",
+              "name": "Violin"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "621cbed8-5bb8-4579-89fa-c5ab15a69f2b",
+              "name": "S P Anantapadmanabha"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "d92884b7-ee0c-46d5-96f3-918196ba8c5b",
+              "name": "Voice"
+            },
+            "attributes": "lead vocals",
+            "lead": true,
+            "artist": {
+              "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+              "name": "Chaitra Sairam"
+            }
+          }
+        ],
+        "concert": [
+          {
+            "mbid": "f0784dac-a546-402f-9ade-c5765b4179ee",
+            "title": "Chaitra Sairam at Arkay"
+          }
+        ]
+      }
+    },
+    {
+      "file": "saraga1.5_carnatic/Chaitra Sairam at Arkay by Chaitra Sairam/Gange Maampahi/Chaitra Sairam - Gange Maampahi.json",
+      "metadata": {
+        "raaga": [],
+        "form": [
+          {
+            "name": "Kriti"
+          }
+        ],
+        "title": "Gange Maampahi",
+        "work": [
+          {
+            "mbid": "0f0a4757-22e1-4de2-bcd1-08fe7bd0444e",
+            "title": "Gange Mampahi"
+          }
+        ],
+        "length": 161933,
+        "taala": [
+          {
+            "uuid": "d9b897ca-ce43-4b6c-823f-c0110bcaffc2",
+            "name": "Khaṇḍa-jāti ēka"
+          }
+        ],
+        "album_artists": [
+          {
+            "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+            "name": "Chaitra Sairam"
+          }
+        ],
+        "mbid": "b584e95d-ec72-4467-abb5-bd18e7a55ae7",
+        "artists": [
+          {
+            "instrument": {
+              "mbid": "f689271c-37bc-4c49-92a3-a14b15ee5d0e",
+              "name": "Mridangam"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "07b755f5-9202-42fe-81a8-820af66d2f51",
+              "name": "B Sivaraman"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "089f123c-0f7d-4105-a64e-49de81ca8fa4",
+              "name": "Violin"
+            },
+            "attributes": "",
+            "lead": false,
+            "artist": {
+              "mbid": "621cbed8-5bb8-4579-89fa-c5ab15a69f2b",
+              "name": "S P Anantapadmanabha"
+            }
+          },
+          {
+            "instrument": {
+              "mbid": "d92884b7-ee0c-46d5-96f3-918196ba8c5b",
+              "name": "Voice"
+            },
+            "attributes": "lead vocals",
+            "lead": true,
+            "artist": {
+              "mbid": "e376d528-bf8a-4d2a-86ec-db2da6dd4c13",
+              "name": "Chaitra Sairam"
+            }
+          }
+        ],
+        "concert": [
+          {
+            "mbid": "f0784dac-a546-402f-9ade-c5765b4179ee",
+            "title": "Chaitra Sairam at Arkay"
+          }
+        ]
+      }
+    },
+    {
+      "file": "saraga1.5_carnatic/KP Nandini at Arkay by KP Nandini/Nadatanum Anisham/Nadatanum Anisham.json",
+      "metadata": {
+        "mbid": "d872ffdd-b4c4-40df-be2a-e257a34d56f0",
+        "title": "Nadatanum Anisham",
+        "length": 253000,
+        "artists": [
+          {
+            "artist": {
+              "mbid": "69ea7bfd-b964-4942-a9cb-995d60ed8573",
+              "name": "Shraddha Ravindran"
+            },
+            "instrument": {
+              "mbid": "089f123c-0f7d-4105-a64e-49de81ca8fa4",
+              "name": "Violin"
+            },
+            "lead": false,
+            "attributes": ""
+          },
+          {
+            "artist": {
+              "mbid": "7b7033c4-4719-451b-a663-7d82a7a4ad93",
+              "name": "Thalaignayiru S Harishkumar"
+            },
+            "instrument": {
+              "mbid": "f689271c-37bc-4c49-92a3-a14b15ee5d0e",
+              "name": "Mridangam"
+            },
+            "lead": false,
+            "attributes": ""
+          },
+          {
+            "artist": {
+              "mbid": "8b4d7483-1637-46fe-a10a-cdce6de6b5dd",
+              "name": "KP Nandini"
+            },
+            "instrument": {
+              "mbid": "d92884b7-ee0c-46d5-96f3-918196ba8c5b",
+              "name": "Voice"
+            },
+            "lead": true,
+            "attributes": "lead vocals"
+          }
+        ],
+        "raaga": [
+          {
+            "uuid": "f040991c-9950-4742-815f-4ff00eb51629",
+            "name": "Cittaranjani",
+            "common_name": "chittaranjani"
+          }
+        ],
+        "taala": [
+          {
+            "uuid": "c788c38a-b53a-48cb-b7bf-d11769260c4d",
+            "name": "Ādi",
+            "common_name": "adi"
+          }
+        ],
+        "form": [
+          {
+            "name": "Kriti"
+          }
+        ],
+        "work": [
+          {
+            "mbid": "e623654f-ed03-4823-8a20-107136da8c3b",
+            "title": "Nadatanum Anisham"
+          }
+        ],
+        "concert": [
+          {
+            "mbid": "c5dd06f4-b0f5-4f40-b335-2db7928b3ae4",
+            "title": "KP Nandini at Arkay"
+          }
+        ],
+        "album_artists": [
+          {
+            "mbid": "8b4d7483-1637-46fe-a10a-cdce6de6b5dd",
+            "name": "KP Nandini"
+          }
+        ]
+      }
+    },
+    {
+      "file": "saraga1.5_carnatic/KP Nandini at Arkay by KP Nandini/Seethamma/Seethamma.json",
+      "metadata": {
+        "mbid": "559b19c7-2d30-47db-8aab-6e4448d867fb",
+        "title": "Seethamma",
+        "length": 299000,
+        "artists": [
+          {
+            "artist": {
+              "mbid": "69ea7bfd-b964-4942-a9cb-995d60ed8573",
+              "name": "Shraddha Ravindran"
+            },
+            "instrument": {
+              "mbid": "089f123c-0f7d-4105-a64e-49de81ca8fa4",
+              "name": "Violin"
+            },
+            "lead": false,
+            "attributes": ""
+          },
+          {
+            "artist": {
+              "mbid": "7b7033c4-4719-451b-a663-7d82a7a4ad93",
+              "name": "Thalaignayiru S Harishkumar"
+            },
+            "instrument": {
+              "mbid": "f689271c-37bc-4c49-92a3-a14b15ee5d0e",
+              "name": "Mridangam"
+            },
+            "lead": false,
+            "attributes": ""
+          },
+          {
+            "artist": {
+              "mbid": "8b4d7483-1637-46fe-a10a-cdce6de6b5dd",
+              "name": "KP Nandini"
+            },
+            "instrument": {
+              "mbid": "d92884b7-ee0c-46d5-96f3-918196ba8c5b",
+              "name": "Voice"
+            },
+            "lead": true,
+            "attributes": "lead vocals"
+          }
+        ],
+        "raaga": [
+          {
+            "uuid": "ac1eb394-661f-4081-8756-d6ed88402660",
+            "name": "Vasanta",
+            "common_name": "vasanta"
+          }
+        ],
+        "taala": [
+          {
+            "uuid": "8c6c26db-e01a-4eef-ae0b-9f7e31a926e8",
+            "name": "Rūpaka",
+            "common_name": "rupaka"
+          }
+        ],
+        "form": [
+          {
+            "name": "Kriti"
+          }
+        ],
+        "work": [
+          {
+            "mbid": "f08ed52d-b88c-471c-9c2b-8bdda093207b",
+            "title": "Seethamma mayamma"
+          }
+        ],
+        "concert": [
+          {
+            "mbid": "c5dd06f4-b0f5-4f40-b335-2db7928b3ae4",
+            "title": "KP Nandini at Arkay"
+          }
+        ],
+        "album_artists": [
+          {
+            "mbid": "8b4d7483-1637-46fe-a10a-cdce6de6b5dd",
+            "name": "KP Nandini"
+          }
+        ]
+      }
+    }
+  ]
+}

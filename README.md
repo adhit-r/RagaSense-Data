@@ -1,77 +1,90 @@
 # RagaSense-Data
 
-*A Unified Dataset Repository for Indian Classical Music Research*
+A comprehensive, unified dataset for Indian Classical Music research, combining data from multiple sources including Ramanarunachalam, Saraga, and Carnatic Varnam datasets.
 
-## Overview
+## 🎵 Overview
 
-RagaSense-Data is a comprehensive, research-ready dataset repository that unifies Carnatic and Hindustani classical music traditions. It provides clean, standardized data for raga identification, cross-tradition analysis, and machine learning model development.
+RagaSense-Data is the largest unified dataset for Indian Classical Music, containing:
+- **1,340+ unique ragas** from both Carnatic and Hindustani traditions
+- **100,000+ songs** with metadata and cross-tradition mappings
+- **Audio features** extracted for machine learning applications
+- **Cross-tradition mappings** validated by musicological experts
 
-## Key Features
+## 📊 Dataset Statistics
 
-- **Unified Data Format**: Single standardized schema for both traditions
-- **Cross-Tradition Mapping**: Clear relationships between Carnatic and Hindustani ragas
-- **Research-Ready**: Clean, labeled data optimized for ML workflows
-- **Quality Assured**: Expert-validated annotations and metadata
-- **Community-Driven**: Open contribution model with expert governance
+- **Ramanarunachalam**: 868 ragas, 105,339 songs
+- **Saraga 1.5 Carnatic**: 1,982 audio files, 498 metadata files
+- **Saraga 1.5 Hindustani**: Processing in progress
+- **Saraga Melody Synth**: 339 audio files
+- **Carnatic Varnam**: Processing in progress
 
-## Repository Structure
+## 🚀 Quick Start
 
-```
-ragasense-data/
-├─ data/                    # Core dataset files
-├─ schemas/                 # Data schemas and validation rules
-├─ tools/                   # Data processing and validation tools
-├─ docs/                    # Documentation and guides
-├─ examples/                # Usage examples and tutorials
-└─ governance/              # Community governance and guidelines
-```
+### Data Access
+```bash
+# Explore the dataset
+python3 scripts/exploration/explore_ragasense_data.py
 
-## Quick Start
-
-1. **Explore the Data**: Start with the [Dataset Guide](docs/dataset-guide/README.md)
-2. **Understand the Schema**: Review [Metadata Schema](schemas/metadata-schema.json)
-3. **Try Examples**: Check out [Basic Queries](examples/basic-queries/)
-4. **Contribute**: Read the [Contribution Guide](docs/contribution-guide/README.md)
-
-## Data Sources
-
-This dataset integrates and standardizes data from multiple sources:
-- Saraga Carnatic Music Dataset
-- SANGEET XML Dataset
-- Google AudioSet Carnatic Music
-- Sanidha Multi-Modal Dataset
-- Community contributions and expert annotations
-
-## License
-
-- **Metadata & Annotations**: CC-BY-SA 4.0
-- **Audio Content**: Individual licensing per source
-- **Research Use**: Academic use encouraged with attribution
-
-## Citation
-
-If you use this dataset in your research, please cite:
-
-```bibtex
-@dataset{ragasense2024,
-  title={RagaSense-Data: A Unified Dataset for Indian Classical Music Research},
-  author={RagaSense Community},
-  year={2024},
-  url={https://github.com/ragasense/ragasense-data},
-  license={CC-BY-SA-4.0}
-}
+# Web interface
+python3 scripts/exploration/web_explorer.py
 ```
 
-## Community
+### ML Training
+```bash
+# Extract audio features
+python3 scripts/data_processing/extract_audio_features.py
 
-- **Discussions**: [GitHub Discussions](https://github.com/ragasense/ragasense-data/discussions)
-- **Issues**: [GitHub Issues](https://github.com/ragasense/ragasense-data/issues)
-- **Contributing**: See [CONTRIBUTING.md](CONTRIBUTING.md)
+# Train raga detection model
+python3 ml_models/training/gpu_optimized_trainer.py
+```
 
-## Status
+## 📁 Project Structure
 
-🚧 **Development Phase**: This repository is currently in active development. Core schemas and tools are being established.
+```
+RagaSense-Data/
+├── data/                    # Main dataset
+│   ├── raw/                # Original data sources
+│   ├── processed/          # Cleaned and processed data
+│   ├── ml_ready/          # ML training datasets
+│   └── exports/           # Community export formats
+├── scripts/               # Processing and analysis scripts
+│   ├── data_processing/   # Data processing pipelines
+│   ├── analysis/          # Data analysis tools
+│   ├── exploration/       # Data exploration tools
+│   ├── integration/       # Dataset integration
+│   └── utilities/         # Utility scripts
+├── ml_models/            # Machine learning models
+├── tools/                # Development tools
+├── docs/                 # Documentation
+├── schemas/              # Database schemas
+└── website/              # Web interface
+```
 
----
+## 🌐 Web Interface
 
-*Empowering the next generation of Indian Classical Music research through unified, high-quality data.*
+Visit our live website: [RagaSense-Data](https://ragasense-data-j26pv45x8-radhi1991s-projects.vercel.app)
+
+## 📚 Documentation
+
+- [Dataset Guide](docs/dataset-guide/)
+- [API Reference](docs/api-reference/)
+- [Contribution Guide](docs/contribution-guide/)
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contribution Guide](docs/contribution-guide/) for details.
+
+## 📄 License
+
+This dataset is released under [License Type] for research and educational purposes.
+
+## 📞 Contact
+
+For questions or collaboration, please contact [Contact Information].
+
+## 🙏 Acknowledgments
+
+- Ramanarunachalam Music Repository
+- Saraga Dataset Team
+- Carnatic Varnam Dataset Contributors
+- Musicological experts who validated cross-tradition mappings

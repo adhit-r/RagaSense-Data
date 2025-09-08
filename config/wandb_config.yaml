@@ -1,0 +1,121 @@
+# Weights & Biases Configuration for RagaSense
+# This configuration enables experiment tracking, model versioning, and collaboration
+
+# Project Settings
+project_name: "ragasense-ml"
+entity: "ragasense-team"  # Change to your W&B entity/team
+
+# Experiment Tracking
+experiments:
+  data_processing:
+    project: "ragasense-data-processing"
+    tags: ["data", "processing", "etl"]
+    notes: "Data processing and feature extraction pipeline"
+  
+  model_training:
+    project: "ragasense-ml-training"
+    tags: ["training", "ragasense", "classification"]
+    notes: "Raga classification model training"
+  
+  model_evaluation:
+    project: "ragasense-model-evaluation"
+    tags: ["evaluation", "metrics", "performance"]
+    notes: "Model evaluation and performance analysis"
+
+# Model Registry
+model_registry:
+  enabled: true
+  models:
+    - name: "raga_classifier"
+      description: "Main raga classification model"
+      framework: "pytorch"
+      tags: ["production", "ragasense"]
+    
+    - name: "raga_feature_extractor"
+      description: "Audio feature extraction model"
+      framework: "pytorch"
+      tags: ["feature-extraction", "audio"]
+
+# Artifacts (Data Versioning)
+artifacts:
+  datasets:
+    - name: "unified_ragas"
+      type: "dataset"
+      description: "Unified raga dataset from multiple sources"
+    
+    - name: "audio_features"
+      type: "dataset"
+      description: "Extracted audio features for ML training"
+    
+    - name: "cross_tradition_mappings"
+      type: "dataset"
+      description: "Cross-tradition raga mappings"
+
+# Monitoring and Alerts
+monitoring:
+  enabled: true
+  alerts:
+    - metric: "val_accuracy"
+      threshold: 0.95
+      condition: "less_than"
+      message: "Validation accuracy below 95%"
+    
+    - metric: "train_loss"
+      threshold: 0.1
+      condition: "greater_than"
+      message: "Training loss above 0.1"
+
+# Hyperparameter Sweeps
+sweeps:
+  raga_classification:
+    method: "bayes"
+    metric:
+      name: "val_accuracy"
+      goal: "maximize"
+    parameters:
+      learning_rate:
+        distribution: "log_uniform_values"
+        min: 1e-5
+        max: 1e-2
+      batch_size:
+        values: [16, 32, 64, 128]
+      hidden_dim:
+        values: [256, 512, 1024]
+      dropout:
+        values: [0.1, 0.2, 0.3, 0.4]
+
+# Dashboard Configuration
+dashboards:
+  - name: "RagaSense Overview"
+    description: "Main dashboard for RagaSense project"
+    panels:
+      - type: "line"
+        metric: "val_accuracy"
+        title: "Validation Accuracy"
+      - type: "line"
+        metric: "train_loss"
+        title: "Training Loss"
+      - type: "scatter"
+        x_metric: "epoch"
+        y_metric: "val_accuracy"
+        title: "Accuracy vs Epochs"
+
+# Integration Settings
+integrations:
+  github:
+    enabled: true
+    repository: "ragasense/ragasense-data"
+  
+  slack:
+    enabled: false
+    webhook_url: ""  # Add your Slack webhook URL
+  
+  email:
+    enabled: false
+    recipients: []  # Add email addresses for notifications
+
+# Environment Variables (set these in your environment)
+# WANDB_API_KEY=your_api_key_here
+# WANDB_PROJECT=ragasense-ml
+# WANDB_ENTITY=your_entity_name
+

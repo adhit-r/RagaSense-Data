@@ -1,0 +1,42 @@
+{
+  "data_sources": {
+    "ramanarunachalam": {
+      "type": "repository",
+      "location": "data/raw/ramanarunachalam",
+      "description": "Ramanarunachalam Music Repository",
+      "last_updated": "2025-09-08"
+    },
+    "saraga": {
+      "type": "dataset",
+      "location": "data/raw/saraga",
+      "description": "Saraga 1.5 datasets",
+      "last_updated": "2025-09-08"
+    }
+  },
+  "processing_pipeline": {
+    "raw_to_processed": {
+      "input": "data/raw/*",
+      "process": "comprehensive_data_processor.py",
+      "output": "data/processed/*",
+      "frequency": "monthly"
+    },
+    "processed_to_ml": {
+      "input": "data/processed/*",
+      "process": "feature_extractor.py",
+      "output": "data/ml_ready/*",
+      "frequency": "weekly"
+    }
+  },
+  "dependencies": {
+    "unified_ragas.json": [
+      "ramanarunachalam",
+      "saraga"
+    ],
+    "audio_features.npy": [
+      "unified_ragas.json"
+    ],
+    "ml_model.pth": [
+      "audio_features.npy"
+    ]
+  }
+}

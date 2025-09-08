@@ -1,0 +1,238 @@
+{
+  "timestamp": "2025-09-08T18:57:38.720656",
+  "processing_stats": {
+    "ragas_processed": 6183,
+    "artists_processed": 1276,
+    "composers_processed": 445,
+    "songs_processed": 10810,
+    "youtube_links_found": 1414938,
+    "errors": 0
+  },
+  "dataset_summary": {
+    "total_ragas": 5383,
+    "total_artists": 1292,
+    "total_composers": 443,
+    "total_songs": 319,
+    "total_youtube_links": 470544
+  },
+  "tradition_distribution": {
+    "ragas": {
+      "Carnatic": 867,
+      "Hindustani": 4516
+    },
+    "artists": {
+      "Carnatic": 753,
+      "Hindustani": 539
+    },
+    "composers": {
+      "Carnatic": 442,
+      "Hindustani": 1
+    },
+    "songs": {
+      "Carnatic": 235,
+      "Hindustani": 84
+    }
+  },
+  "source_distribution": {
+    "ragas": {
+      "Ramanarunachalam": 5383
+    },
+    "artists": {
+      "Ramanarunachalam": 1276,
+      "Saraga-Carnatic-Melody-Synth": 16
+    },
+    "composers": {
+      "Ramanarunachalam": 443
+    },
+    "songs": {
+      "Saraga1.5-Carnatic": 235,
+      "Saraga1.5-Hindustani": 84
+    }
+  },
+  "top_ragas_by_songs": [
+    [
+      "Unknownraga",
+      84645
+    ],
+    [
+      "Ragamalika",
+      3610
+    ],
+    [
+      "Kalyani",
+      2824
+    ],
+    [
+      "Bhairavi",
+      1998
+    ],
+    [
+      "Thodi",
+      1864
+    ],
+    [
+      "Kaanada",
+      1848
+    ],
+    [
+      "Sankarabharanam",
+      1703
+    ],
+    [
+      "Kambhoji",
+      1478
+    ],
+    [
+      "Karaharapriya",
+      1428
+    ],
+    [
+      "Mohanam",
+      1425
+    ],
+    [
+      "Kannada",
+      1381
+    ],
+    [
+      "Anandabhairavi",
+      1360
+    ],
+    [
+      "Poorvikalyani",
+      1227
+    ],
+    [
+      "Sindhubhairavi",
+      1179
+    ],
+    [
+      "Madhyamavathi",
+      1176
+    ],
+    [
+      "Hamsadhwani",
+      1170
+    ],
+    [
+      "Khamas",
+      1107
+    ],
+    [
+      "Behag",
+      1090
+    ],
+    [
+      "Kapi",
+      1074
+    ],
+    [
+      "Begada",
+      1019
+    ]
+  ],
+  "top_artists_by_songs": [
+    [
+      "Sanjay Subrahmanyan",
+      40
+    ],
+    [
+      "Ajoy Chakrabarty",
+      25
+    ],
+    [
+      "Kallidaikurichi S. Sivakumar",
+      19
+    ],
+    [
+      "Guruvayur Dorai",
+      14
+    ],
+    [
+      "Modhumudi Sudhakar",
+      14
+    ],
+    [
+      "Milind Malshe",
+      13
+    ],
+    [
+      "Vignesh Ishwar",
+      11
+    ],
+    [
+      "Nagai Muralidharan",
+      11
+    ],
+    [
+      "Rithvik Raja",
+      10
+    ],
+    [
+      "Sumithra Vasudev",
+      10
+    ],
+    [
+      "Patri Satish Kumar",
+      10
+    ],
+    [
+      "Mahati",
+      10
+    ],
+    [
+      "Sumithra Vasudev",
+      10
+    ],
+    [
+      "Akkarai Sornalatha",
+      9
+    ],
+    [
+      "Vasundara Rajagopal",
+      9
+    ],
+    [
+      "Manda Sudharani",
+      9
+    ],
+    [
+      "Akkarai Sisters",
+      9
+    ],
+    [
+      "Ashwath Narayanan",
+      9
+    ],
+    [
+      "Akkarai Subhalakshmi",
+      9
+    ],
+    [
+      "Vasundara Rajagopal",
+      9
+    ]
+  ],
+  "youtube_links_sample": [
+    "https://www.youtube.com/watch?v=ADWc0R8x2e0&start=0&end=5",
+    "https://www.youtube.com/watch?v=_L4gGCmPH60",
+    "https://www.youtube.com/watch?v=tE56hD4y5EA&start=1452&end=2059",
+    "https://www.youtube.com/watch?v=vdritMBNOMM",
+    "https://www.youtube.com/watch?v=dXd9UBotPmU",
+    "https://www.youtube.com/watch?v=7x1iPdGNa5o",
+    "https://www.youtube.com/watch?v=eDCkRsxW1Ek",
+    "https://www.youtube.com/watch?v=PPY7hkVsOS4",
+    "https://www.youtube.com/watch?v=HBiS8RNBrDw&start=2206&end=2686",
+    "https://www.youtube.com/watch?v=wp3KTfNV_4M&start=0&end=407",
+    "https://www.youtube.com/watch?v=8IbptppSCWY",
+    "https://www.youtube.com/watch?v=Csha9LwbCA8",
+    "https://www.youtube.com/watch?v=2NgqG1jhIUQ&start=3232&end=3446",
+    "https://www.youtube.com/watch?v=L7kCNU33KD4",
+    "https://www.youtube.com/watch?v=gCNrap19BUI",
+    "https://www.youtube.com/watch?v=swz1srDGgiA&start=1945&end=4431",
+    "https://www.youtube.com/watch?v=L2ZbygWGd7E",
+    "https://www.youtube.com/watch?v=RkGpIcl3rVk",
+    "https://www.youtube.com/watch?v=saDVX5QNxJk",
+    "https://www.youtube.com/watch?v=wUgBd1U_WZ4"
+  ]
+}

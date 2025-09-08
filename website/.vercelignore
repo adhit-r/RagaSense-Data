@@ -1,0 +1,25 @@
+# Ignore large data files for deployment
+../data/
+../downloads/
+../archive/
+../logs/
+../venv/
+../wandb/
+../ml_models/
+../scripts/
+../tools/
+../schemas/
+../examples/
+../governance/
+../processed_data/
+../data_processing/
+
+# Keep only essential files
+!src/
+!public/
+!package.json
+!package-lock.json
+!astro.config.mjs
+!tailwind.config.mjs
+!vercel.json
+

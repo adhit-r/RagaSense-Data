@@ -1,0 +1,55 @@
+{
+  "version": "2.0",
+  "description": "Updated schema for RagaSense-Data with proper ragamalika handling",
+  "entity_types": {
+    "individual_ragas": {
+      "description": "Individual ragas (e.g., Kalyani, Bhairavi, Thodi)",
+      "fields": [
+        "raga_id",
+        "name",
+        "tradition",
+        "sources",
+        "song_count",
+        "metadata",
+        "youtube_links",
+        "melakarta_number",
+        "parent_scale"
+      ]
+    },
+    "composition_forms": {
+      "description": "Composition forms (e.g., Ragamalika, Talamalika)",
+      "fields": [
+        "form_id",
+        "name",
+        "type",
+        "description",
+        "tradition",
+        "sources",
+        "song_count",
+        "metadata",
+        "youtube_links"
+      ]
+    },
+    "ragamalika_compositions": {
+      "description": "Specific ragamalika compositions with constituent ragas",
+      "fields": [
+        "composition_id",
+        "name",
+        "composer",
+        "type",
+        "tradition",
+        "constituent_ragas",
+        "total_ragas",
+        "unique_ragas",
+        "songs",
+        "metadata",
+        "youtube_links"
+      ]
+    }
+  },
+  "relationships": {
+    "ragamalika_contains_ragas": "Many-to-many relationship between ragamalika compositions and individual ragas",
+    "songs_belong_to_ragas": "Many-to-many relationship between songs and individual ragas",
+    "songs_belong_to_compositions": "Many-to-one relationship between songs and ragamalika compositions"
+  }
+}

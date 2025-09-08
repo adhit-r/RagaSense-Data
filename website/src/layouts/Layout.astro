@@ -1,0 +1,135 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "The most comprehensive Indian Classical Music dataset ever assembled. 6,068 ragas, 1,276 artists, 443 composers, and 10,743 songs with cross-tradition mappings." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="indian classical music, carnatic, hindustani, raga, dataset, music research, AI, machine learning" />
+    <meta name="author" content="RagaSense-Data Team" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="RagaSense-Data" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="font-mono antialiased bg-white text-gray-900">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-900 bg-white;
+    font-family: 'Geist Mono', monospace;
+  }
+  
+  .section-container {
+    @apply bg-white border border-gray-200 rounded-lg shadow-sm;
+  }
+  
+  .section-header {
+    @apply bg-gray-50 text-gray-700 px-6 py-4 border-b border-gray-200 flex items-center;
+  }
+  
+  .section-body {
+    @apply p-6 bg-white text-gray-900;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-mono py-3 px-6 rounded-md transition-colors duration-200 shadow-sm;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-gray-700 font-mono py-3 px-6 border border-gray-300 rounded-md transition-colors duration-200 shadow-sm;
+  }
+  
+  .card {
+    @apply bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors duration-200 shadow-sm;
+  }
+  
+  .stat-card {
+    @apply bg-white border border-gray-200 rounded-lg p-6 text-center hover:border-gray-300 transition-colors duration-200 shadow-sm;
+  }
+  
+  .tradition-badge {
+    @apply inline-flex items-center px-3 py-1 text-sm font-mono border rounded-full;
+  }
+  
+  .carnatic-badge {
+    @apply tradition-badge bg-purple-50 text-purple-700 border-purple-200;
+  }
+  
+  .hindustani-badge {
+    @apply tradition-badge bg-orange-50 text-orange-700 border-orange-200;
+  }
+  
+  .unified-badge {
+    @apply tradition-badge bg-green-50 text-green-700 border-green-200;
+  }
+  
+  .text-gradient {
+    @apply text-gray-900;
+  }
+  
+  .table {
+    @apply w-full border-collapse border border-gray-200 rounded-lg overflow-hidden;
+  }
+  
+  .table th {
+    @apply bg-gray-50 border border-gray-200 px-4 py-3 text-left text-gray-700 font-semibold;
+  }
+  
+  .table td {
+    @apply border border-gray-200 px-4 py-3 text-gray-600;
+  }
+  
+  .mermaid-container {
+    @apply bg-gray-50 border border-gray-200 rounded-lg p-6 my-6;
+  }
+  
+  .error-text {
+    @apply text-red-600;
+  }
+  
+  .success-text {
+    @apply text-green-600;
+  }
+  
+  .warning-text {
+    @apply text-yellow-600;
+  }
+  
+  .info-text {
+    @apply text-blue-600;
+  }
+</style>

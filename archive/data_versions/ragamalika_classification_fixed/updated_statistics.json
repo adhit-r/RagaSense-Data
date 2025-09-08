@@ -1,0 +1,102 @@
+{
+  "total_individual_ragas": 5393,
+  "tradition_distribution": {
+    "Carnatic": 880,
+    "Hindustani": 4513
+  },
+  "source_distribution": {
+    "Ramanarunachalam": 5373,
+    "Ragamalika-Extracted": 20
+  },
+  "top_ragas_by_songs": [
+    [
+      "Unknownraga",
+      84645
+    ],
+    [
+      "Kalyani",
+      2824
+    ],
+    [
+      "Bhairavi",
+      1998
+    ],
+    [
+      "Thodi",
+      1864
+    ],
+    [
+      "Kaanada",
+      1848
+    ],
+    [
+      "Sankarabharanam",
+      1703
+    ],
+    [
+      "Kambhoji",
+      1478
+    ],
+    [
+      "Karaharapriya",
+      1428
+    ],
+    [
+      "Mohanam",
+      1425
+    ],
+    [
+      "Kannada",
+      1381
+    ],
+    [
+      "Anandabhairavi",
+      1360
+    ],
+    [
+      "Poorvikalyani",
+      1227
+    ],
+    [
+      "Sindhubhairavi",
+      1179
+    ],
+    [
+      "Madhyamavathi",
+      1176
+    ],
+    [
+      "Hamsadhwani",
+      1170
+    ],
+    [
+      "Khamas",
+      1107
+    ],
+    [
+      "Behag",
+      1090
+    ],
+    [
+      "Kapi",
+      1074
+    ],
+    [
+      "Begada",
+      1019
+    ],
+    [
+      "Hindolam",
+      990
+    ]
+  ],
+  "composition_forms_count": 8,
+  "ragamalika_compositions_count": 6,
+  "fix_statistics": {
+    "ragas_reclassified": 10,
+    "composition_forms_created": 10,
+    "individual_ragas_extracted": 20,
+    "songs_reprocessed": 0,
+    "errors": 0
+  }
+}

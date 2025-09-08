@@ -1,0 +1,119 @@
+# Weights & Biases Configuration for RagaSense-Data
+# This file configures W&B for experiment tracking across the project
+
+# Project Configuration
+project: "ragasense-data"
+entity: "ragasense"  # Change to your W&B entity/team
+
+# Experiment Tracking Settings
+settings:
+  # Data Ingestion Tracking
+  ingestion:
+    project: "ragasense-data-ingestion"
+    tags: ["data-ingestion", "etl", "pipeline"]
+    config:
+      base_path: "/Users/adhi/axonome/RagaSense-Data"
+      schema_version: "1.0"
+      total_sources: 10
+    
+  # Data Validation Tracking
+  validation:
+    project: "ragasense-data-validation"
+    tags: ["data-validation", "quality-assurance", "schema-validation"]
+    config:
+      validation_threshold: 0.7
+      schema_compliance_target: 0.95
+    
+  # Cross-Tradition Mapping Tracking
+  mapping:
+    project: "ragasense-cross-tradition-mapping"
+    tags: ["raga-mapping", "cross-tradition", "relationship-analysis"]
+    config:
+      confidence_threshold: 0.8
+      expert_validation_required: true
+    
+  # Audio Analysis Tracking
+  audio_analysis:
+    project: "ragasense-audio-analysis"
+    tags: ["audio-processing", "feature-extraction", "raga-classification"]
+    config:
+      sample_rate: 44100
+      feature_types: ["mfcc", "chroma", "spectral", "rhythm"]
+
+# Metrics to Track
+metrics:
+  data_quality:
+    - "schema_compliance_rate"
+    - "average_quality_score"
+    - "total_records_processed"
+    - "total_records_valid"
+    - "validation_errors_count"
+    - "processing_time"
+  
+  raga_analysis:
+    - "unique_ragas_count"
+    - "cross_tradition_mappings"
+    - "mapping_confidence_scores"
+    - "expert_validation_rate"
+  
+  audio_processing:
+    - "audio_quality_scores"
+    - "feature_extraction_time"
+    - "classification_accuracy"
+    - "processing_throughput"
+
+# Artifacts to Store
+artifacts:
+  datasets:
+    - "unified_metadata"
+    - "raga_mappings"
+    - "audio_features"
+    - "validation_reports"
+  
+  models:
+    - "raga_classification_model"
+    - "cross_tradition_mapping_model"
+    - "audio_feature_extractor"
+
+# Dashboard Configuration
+dashboard:
+  name: "RagaSense Data Pipeline"
+  description: "Comprehensive tracking of Indian Classical Music data processing pipeline"
+  
+  panels:
+    - name: "Data Quality Overview"
+      type: "line"
+      metrics: ["schema_compliance_rate", "average_quality_score"]
+    
+    - name: "Processing Throughput"
+      type: "bar"
+      metrics: ["total_records_processed", "total_records_valid"]
+    
+    - name: "Raga Distribution"
+      type: "pie"
+      metrics: ["carnatic_ragas", "hindustani_ragas", "cross_tradition_mappings"]
+
+# Alert Configuration
+alerts:
+  data_quality:
+    - metric: "schema_compliance_rate"
+      threshold: 0.9
+      condition: "less_than"
+      message: "Schema compliance rate below 90%"
+    
+    - metric: "average_quality_score"
+      threshold: 0.8
+      condition: "less_than"
+      message: "Average quality score below 80%"
+  
+  processing:
+    - metric: "processing_time"
+      threshold: 3600  # 1 hour
+      condition: "greater_than"
+      message: "Processing time exceeded 1 hour"
+
+# Environment Variables
+env_vars:
+  WANDB_PROJECT: "ragasense-data"
+  WANDB_ENTITY: "ragasense"
+  WANDB_MODE: "online"  # or "offline" for development

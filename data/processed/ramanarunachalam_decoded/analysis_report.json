@@ -1,0 +1,166 @@
+{
+  "total_ragas": 866,
+  "total_concerts": 14122,
+  "total_songs": 105339,
+  "top_ragas": [
+    {
+      "raga_id": 1,
+      "raga_name": "Raga_1",
+      "song_count": 5090,
+      "letter": "R"
+    },
+    {
+      "raga_id": 2,
+      "raga_name": "Raga_2",
+      "song_count": 2909,
+      "letter": "K"
+    },
+    {
+      "raga_id": 3,
+      "raga_name": "Raga_3",
+      "song_count": 2797,
+      "letter": "T"
+    },
+    {
+      "raga_id": 5,
+      "raga_name": "Raga_5",
+      "song_count": 2353,
+      "letter": "S"
+    },
+    {
+      "raga_id": 4,
+      "raga_name": "Raga_4",
+      "song_count": 2059,
+      "letter": "B"
+    },
+    {
+      "raga_id": 6,
+      "raga_name": "Raga_6",
+      "song_count": 1929,
+      "letter": "K"
+    },
+    {
+      "raga_id": 12,
+      "raga_name": "Raga_12",
+      "song_count": 1899,
+      "letter": "S"
+    },
+    {
+      "raga_id": 13,
+      "raga_name": "Raga_13",
+      "song_count": 1891,
+      "letter": "K"
+    },
+    {
+      "raga_id": 11,
+      "raga_name": "Raga_11",
+      "song_count": 1805,
+      "letter": "H"
+    },
+    {
+      "raga_id": 26,
+      "raga_name": "Raga_26",
+      "song_count": 1789,
+      "letter": "P"
+    },
+    {
+      "raga_id": 16,
+      "raga_name": "Raga_16",
+      "song_count": 1743,
+      "letter": "K"
+    },
+    {
+      "raga_id": 8,
+      "raga_name": "Raga_8",
+      "song_count": 1674,
+      "letter": "M"
+    },
+    {
+      "raga_id": 14,
+      "raga_name": "Raga_14",
+      "song_count": 1659,
+      "letter": "M"
+    },
+    {
+      "raga_id": 18,
+      "raga_name": "Raga_18",
+      "song_count": 1637,
+      "letter": "P"
+    },
+    {
+      "raga_id": 17,
+      "raga_name": "Raga_17",
+      "song_count": 1565,
+      "letter": "A"
+    },
+    {
+      "raga_id": 7,
+      "raga_name": "Raga_7",
+      "song_count": 1506,
+      "letter": "K"
+    },
+    {
+      "raga_id": 31,
+      "raga_name": "Raga_31",
+      "song_count": 1452,
+      "letter": "S"
+    },
+    {
+      "raga_id": 20,
+      "raga_name": "Raga_20",
+      "song_count": 1414,
+      "letter": "B"
+    },
+    {
+      "raga_id": 23,
+      "raga_name": "Raga_23",
+      "song_count": 1360,
+      "letter": "N"
+    },
+    {
+      "raga_id": 22,
+      "raga_name": "Raga_22",
+      "song_count": 1301,
+      "letter": "B"
+    }
+  ],
+  "raga_distribution": {
+    "min_songs": 0,
+    "max_songs": 5090,
+    "avg_songs": 121.63856812933025,
+    "ragas_with_1000_plus_songs": 32,
+    "ragas_with_100_plus_songs": 159,
+    "ragas_with_10_plus_songs": 322
+  },
+  "data_structure_analysis": {
+    "raga_mappings_languages": [
+      "english",
+      "tamil",
+      "telugu",
+      "kannada",
+      "malayalam",
+      "hindi",
+      "marathi",
+      "bengali",
+      "gujarati",
+      "punjabi",
+      "odia",
+      "assamese"
+    ],
+    "composer_mappings_languages": [
+      "english",
+      "tamil",
+      "telugu",
+      "kannada",
+      "malayalam",
+      "hindi",
+      "marathi",
+      "bengali",
+      "gujarati",
+      "punjabi",
+      "odia",
+      "assamese"
+    ],
+    "concert_structure": "YouTube video ID -> List of songs with Raga/Composer/Song IDs"
+  }
+}

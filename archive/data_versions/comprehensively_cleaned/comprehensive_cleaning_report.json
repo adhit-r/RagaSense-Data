@@ -1,0 +1,71 @@
+{
+  "timestamp": "2025-09-09T00:11:07.692758",
+  "cleaning_version": "1.0",
+  "cleaning_stats": {
+    "system_files_removed": 0,
+    "invalid_artists_removed": 1,
+    "tracks_cleaned": 4536,
+    "artists_cleaned": 0,
+    "ragas_cleaned": 1340,
+    "cross_tradition_mappings_cleaned": 12,
+    "total_issues_fixed": 0
+  },
+  "artist_analysis": {
+    "total_artists": 18,
+    "artists_removed": 1,
+    "removal_rate": 5.263157894736842
+  },
+  "track_analysis": {
+    "total_tracks": 4536,
+    "tracks_cleaned": 4536,
+    "cleaning_rate": 100.0
+  },
+  "raga_analysis": {
+    "total_ragas": 1340,
+    "ragas_cleaned": 1340,
+    "cleaning_rate": 100.0
+  },
+  "mapping_analysis": {
+    "total_mappings": 12,
+    "mappings_cleaned": 12,
+    "cleaning_rate": 100.0
+  },
+  "system_patterns_detected": [
+    "^__MACOSX",
+    "^\\._",
+    "^\\.DS_Store",
+    "^Thumbs\\.db",
+    "^desktop\\.ini",
+    "^\\.git",
+    "^\\.svn",
+    "^\\.hg",
+    "^\\.bzr"
+  ],
+  "invalid_artist_patterns_detected": [
+    "^__MACOSX",
+    "^\\._",
+    "^\\.DS_Store",
+    "^Thumbs\\.db",
+    "^desktop\\.ini",
+    "^\\.git",
+    "^\\.svn",
+    "^\\.hg",
+    "^\\.bzr",
+    "^system",
+    "^temp",
+    "^tmp",
+    "^backup",
+    "^old",
+    "^test",
+    "^sample",
+    "^example",
+    "^dummy",
+    "^placeholder"
+  ],
+  "data_quality_improvements": {
+    "system_files_removed": 1,
+    "artist_track_relationships_fixed": 4536,
+    "raga_structure_cleaned": 1340,
+    "cross_tradition_mappings_cleaned": 12
+  }
+}

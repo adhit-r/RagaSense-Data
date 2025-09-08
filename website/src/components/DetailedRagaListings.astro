@@ -1,0 +1,399 @@
+---
+// Detailed raga listings component showing all individual ragas by tradition
+---
+
+<section id="raga-listings" class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Individual Raga Listings</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        Complete listing of all 1,340 individual ragas in our dataset, organized by tradition.
+      </p>
+    </div>
+
+    <!-- Tradition Tabs -->
+    <div class="flex justify-center mb-8">
+      <div class="bg-gray-100 p-1 rounded-lg">
+        <button id="carnatic-tab" class="tab-button active px-6 py-2 rounded-md font-medium transition-colors">
+          Carnatic (1,143 ragas)
+        </button>
+        <button id="hindustani-tab" class="tab-button px-6 py-2 rounded-md font-medium transition-colors">
+          Hindustani (132 ragas)
+        </button>
+      </div>
+    </div>
+
+    <!-- Carnatic Ragas -->
+    <div id="carnatic-content" class="tab-content">
+      <div class="mb-6">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Carnatic Ragas (1,143)</h3>
+        <p class="text-gray-600 mb-6">
+          Carnatic ragas form the foundation of South Indian classical music, with 72 melakarta (parent) ragas 
+          and numerous janya (derived) ragas. Each raga has specific ascending (arohana) and descending (avarohana) scales.
+        </p>
+      </div>
+
+      <!-- Top Carnatic Ragas -->
+      <div class="mb-8">
+        <h4 class="text-lg font-semibold text-gray-900 mb-4">Top Carnatic Ragas by Song Count</h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold text-purple-900">Kalyani</span>
+              <span class="text-sm text-purple-600">6,244 songs</span>
+            </div>
+            <p class="text-xs text-purple-700">65th Melakarta - Lydian mode</p>
+          </div>
+          
+          <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold text-purple-900">Bhairavi</span>
+              <span class="text-sm text-purple-600">1,998 songs</span>
+            </div>
+            <p class="text-xs text-purple-700">20th Melakarta janya - Bhashanga raga</p>
+          </div>
+          
+          <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold text-purple-900">Thodi</span>
+              <span class="text-sm text-purple-600">1,864 songs</span>
+            </div>
+            <p class="text-xs text-purple-700">8th Melakarta - Hanumatodi</p>
+          </div>
+          
+          <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold text-purple-900">Kaanada</span>
+              <span class="text-sm text-purple-600">1,848 songs</span>
+            </div>
+            <p class="text-xs text-purple-700">28th Melakarta janya - Harikambhoji</p>
+          </div>
+          
+          <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold text-purple-900">Sankarabharanam</span>
+              <span class="text-sm text-purple-600">1,703 songs</span>
+            </div>
+            <p class="text-xs text-purple-700">29th Melakarta - Major scale</p>
+          </div>
+          
+          <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold text-purple-900">Kambhoji</span>
+              <span class="text-sm text-purple-600">1,478 songs</span>
+            </div>
+            <p class="text-xs text-purple-700">28th Melakarta - Harikambhoji</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carnatic Raga Categories -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Melakarta Ragas -->
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+          <h4 class="text-lg font-semibold text-gray-900 mb-4">Melakarta Ragas (Parent Ragas)</h4>
+          <p class="text-sm text-gray-600 mb-4">
+            The 72 melakarta ragas form the foundation of Carnatic music, each with a unique combination of notes.
+          </p>
+          <div class="space-y-2 max-h-64 overflow-y-auto">
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Shankarabharanam</span>
+              <span class="text-xs text-gray-500">29th Melakarta</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Kalyani</span>
+              <span class="text-xs text-gray-500">65th Melakarta</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Hanumatodi</span>
+              <span class="text-xs text-gray-500">8th Melakarta</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Harikambhoji</span>
+              <span class="text-xs text-gray-500">28th Melakarta</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Natabhairavi</span>
+              <span class="text-xs text-gray-500">20th Melakarta</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Kharaharapriya</span>
+              <span class="text-xs text-gray-500">22nd Melakarta</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Mohanam</span>
+              <span class="text-xs text-gray-500">28th Melakarta janya</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Bilahari</span>
+              <span class="text-xs text-gray-500">29th Melakarta janya</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Hamsadhwani</span>
+              <span class="text-xs text-gray-500">29th Melakarta janya</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Madhyamavathi</span>
+              <span class="text-xs text-gray-500">22nd Melakarta janya</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popular Janya Ragas -->
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+          <h4 class="text-lg font-semibold text-gray-900 mb-4">Popular Janya Ragas (Derived)</h4>
+          <p class="text-sm text-gray-600 mb-4">
+            Janya ragas are derived from melakarta ragas and form the majority of Carnatic compositions.
+          </p>
+          <div class="space-y-2 max-h-64 overflow-y-auto">
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Bhairavi</span>
+              <span class="text-xs text-gray-500">Natabhairavi janya</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Kaanada</span>
+              <span class="text-xs text-gray-500">Harikambhoji janya</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Kambhoji</span>
+              <span class="text-xs text-gray-500">Harikambhoji janya</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Mohanam</span>
+              <span class="text-xs text-gray-500">Harikambhoji janya</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Bilahari</span>
+              <span class="text-xs text-gray-500">Shankarabharanam janya</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Hamsadhwani</span>
+              <span class="text-xs text-gray-500">Shankarabharanam janya</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Madhyamavathi</span>
+              <span class="text-xs text-gray-500">Kharaharapriya janya</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Saveri</span>
+              <span class="text-xs text-gray-500">Kharaharapriya janya</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Begada</span>
+              <span class="text-xs text-gray-500">Shankarabharanam janya</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Shree</span>
+              <span class="text-xs text-gray-500">Kharaharapriya janya</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hindustani Ragas -->
+    <div id="hindustani-content" class="tab-content hidden">
+      <div class="mb-6">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Hindustani Ragas (132)</h3>
+        <p class="text-gray-600 mb-6">
+          Hindustani ragas are organized into 10 thaats (parent scales) and include numerous ragas with specific 
+          time associations and emotional characteristics. Each raga has distinct ascending and descending patterns.
+        </p>
+      </div>
+
+      <!-- Top Hindustani Ragas -->
+      <div class="mb-8">
+        <h4 class="text-lg font-semibold text-gray-900 mb-4">Top Hindustani Ragas by Song Count</h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="bg-orange-50 p-4 rounded-lg border border-orange-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold text-orange-900">Yaman</span>
+              <span class="text-sm text-orange-600">High popularity</span>
+            </div>
+            <p class="text-xs text-orange-700">Kalyan thaat - Evening raga</p>
+          </div>
+          
+          <div class="bg-orange-50 p-4 rounded-lg border border-orange-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold text-orange-900">Bhairavi</span>
+              <span class="text-sm text-orange-600">Morning raga</span>
+            </div>
+            <p class="text-xs text-orange-700">Bhairavi thaat - All komal notes</p>
+          </div>
+          
+          <div class="bg-orange-50 p-4 rounded-lg border border-orange-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold text-orange-900">Bilawal</span>
+              <span class="text-sm text-orange-600">Major scale</span>
+            </div>
+            <p class="text-xs text-orange-700">Bilawal thaat - Morning raga</p>
+          </div>
+          
+          <div class="bg-orange-50 p-4 rounded-lg border border-orange-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold text-orange-900">Bhoopali</span>
+              <span class="text-sm text-orange-600">Pentatonic</span>
+            </div>
+            <p class="text-xs text-orange-700">Bilawal thaat - Evening raga</p>
+          </div>
+          
+          <div class="bg-orange-50 p-4 rounded-lg border border-orange-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold text-orange-900">Miyan ki Todi</span>
+              <span class="text-sm text-orange-600">Morning raga</span>
+            </div>
+            <p class="text-xs text-orange-700">Todi thaat - Serious mood</p>
+          </div>
+          
+          <div class="bg-orange-50 p-4 rounded-lg border border-orange-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold text-orange-900">Khamaj</span>
+              <span class="text-sm text-orange-600">Evening raga</span>
+            </div>
+            <p class="text-xs text-orange-700">Khamaj thaat - Light mood</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hindustani Thaat Categories -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Major Thaats -->
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+          <h4 class="text-lg font-semibold text-gray-900 mb-4">Major Thaats</h4>
+          <p class="text-sm text-gray-600 mb-4">
+            The 10 fundamental thaats that form the basis of Hindustani raga classification.
+          </p>
+          <div class="space-y-2 max-h-64 overflow-y-auto">
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Bilawal</span>
+              <span class="text-xs text-gray-500">Major scale</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Kalyan</span>
+              <span class="text-xs text-gray-500">Lydian mode</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Khamaj</span>
+              <span class="text-xs text-gray-500">Mixolydian mode</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Bhairavi</span>
+              <span class="text-xs text-gray-500">All komal notes</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Todi</span>
+              <span class="text-xs text-gray-500">Serious mood</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Asavari</span>
+              <span class="text-xs text-gray-500">Morning raga</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Marwa</span>
+              <span class="text-xs text-gray-500">Sunset raga</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Puriya</span>
+              <span class="text-xs text-gray-500">Evening raga</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Kafi</span>
+              <span class="text-xs text-gray-500">Light mood</span>
+            </div>
+            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+              <span class="text-sm font-medium">Bhairav</span>
+              <span class="text-xs text-gray-500">Morning raga</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popular Ragas by Time -->
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+          <h4 class="text-lg font-semibold text-gray-900 mb-4">Popular Ragas by Time</h4>
+          <p class="text-sm text-gray-600 mb-4">
+            Hindustani ragas are traditionally associated with specific times of day and seasons.
+          </p>
+          <div class="space-y-4">
+            <div>
+              <h5 class="font-medium text-gray-900 mb-2">Morning Ragas</h5>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Bhairavi</span>
+                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Miyan ki Todi</span>
+                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Bhairav</span>
+                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Asavari</span>
+              </div>
+            </div>
+            
+            <div>
+              <h5 class="font-medium text-gray-900 mb-2">Evening Ragas</h5>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2 py-1 bg-orange-100 text-orange-800 text-xs rounded">Yaman</span>
+                <span class="px-2 py-1 bg-orange-100 text-orange-800 text-xs rounded">Bhoopali</span>
+                <span class="px-2 py-1 bg-orange-100 text-orange-800 text-xs rounded">Khamaj</span>
+                <span class="px-2 py-1 bg-orange-100 text-orange-800 text-xs rounded">Puriya</span>
+              </div>
+            </div>
+            
+            <div>
+              <h5 class="font-medium text-gray-900 mb-2">Night Ragas</h5>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">Darbari</span>
+                <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">Malkauns</span>
+                <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">Bageshri</span>
+                <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">Kafi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Tab switching functionality
+  const carnaticTab = document.getElementById('carnatic-tab');
+  const hindustaniTab = document.getElementById('hindustani-tab');
+  const carnaticContent = document.getElementById('carnatic-content');
+  const hindustaniContent = document.getElementById('hindustani-content');
+
+  carnaticTab.addEventListener('click', () => {
+    carnaticTab.classList.add('active', 'bg-white', 'text-gray-900', 'shadow-sm');
+    carnaticTab.classList.remove('text-gray-600');
+    hindustaniTab.classList.remove('active', 'bg-white', 'text-gray-900', 'shadow-sm');
+    hindustaniTab.classList.add('text-gray-600');
+    
+    carnaticContent.classList.remove('hidden');
+    hindustaniContent.classList.add('hidden');
+  });
+
+  hindustaniTab.addEventListener('click', () => {
+    hindustaniTab.classList.add('active', 'bg-white', 'text-gray-900', 'shadow-sm');
+    hindustaniTab.classList.remove('text-gray-600');
+    carnaticTab.classList.remove('active', 'bg-white', 'text-gray-900', 'shadow-sm');
+    carnaticTab.classList.add('text-gray-600');
+    
+    hindustaniContent.classList.remove('hidden');
+    carnaticContent.classList.add('hidden');
+  });
+</script>
+
+<style>
+  .tab-button {
+    color: #6b7280;
+  }
+  
+  .tab-button.active {
+    background-color: white;
+    color: #111827;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .tab-content {
+    display: block;
+  }
+  
+  .tab-content.hidden {
+    display: none;
+  }
+</style>

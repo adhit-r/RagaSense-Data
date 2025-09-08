@@ -1,0 +1,93 @@
+{
+  "kalyani_yaman": {
+    "carnatic_raga": "Kalyani",
+    "hindustani_raga": "Yaman",
+    "equivalence_type": "perfect",
+    "confidence": "HIGH",
+    "score": 195,
+    "scale_match": "100%",
+    "scale_notation": "S R2 G3 M2 P D2 N3 S (Lydian mode)",
+    "evidence": "Both use Lydian mode with same scale. Kalyani is S R2 G3 M2 P D2 N3 and Yaman uses all shuddh swaras except tivra Ma",
+    "sources": [
+      "Wikipedia",
+      "Rajan Parrikar Music Archive",
+      "Quora analysis"
+    ],
+    "notes": "Main difference is in movement patterns - Yaman emphasizes Ni Re Ga and Ma Dha Ni phrases, while Kalyani uses Sa Ri Ga Ma Pa Dha Ni movement"
+  },
+  "shankarabharanam_bilawal": {
+    "carnatic_raga": "Shankarabharanam",
+    "hindustani_raga": "Bilawal",
+    "equivalence_type": "perfect",
+    "confidence": "HIGH",
+    "score": 190,
+    "scale_match": "100%",
+    "scale_notation": "S R2 G3 M1 P D2 N3 S (Major scale/Ionian mode)",
+    "evidence": "Shankarabharanam corresponds to Bilaval in Hindustani music and both are equivalent to the Western major scale/Ionian mode",
+    "sources": [
+      "Wikipedia",
+      "Sankarabharanam Raga analysis"
+    ],
+    "notes": "In Hindustani music, Bilawal is considered the fundamental equivalent"
+  },
+  "mohanam_bhoopali": {
+    "carnatic_raga": "Mohanam",
+    "hindustani_raga": "Bhoopali",
+    "equivalence_type": "perfect",
+    "confidence": "HIGH",
+    "score": 185,
+    "scale_match": "100%",
+    "scale_notation": "S R2 G3 P D2 S (Major pentatonic)",
+    "evidence": "Both are major pentatonic scales using the same five notes",
+    "sources": [
+      "Wikipedia",
+      "Indian classical music literature"
+    ],
+    "notes": "Well-established equivalence in Indian classical music literature"
+  },
+  "hindolam_malkauns": {
+    "carnatic_raga": "Hindolam",
+    "hindustani_raga": "Malkauns",
+    "equivalence_type": "high",
+    "confidence": "HIGH",
+    "score": 175,
+    "scale_match": "100%",
+    "scale_notation": "S G1 M1 D1 N1 S (Pentatonic set)",
+    "evidence": "Standard equivalents with same pentatonic set",
+    "sources": [
+      "Wikipedia",
+      "Standard raga equivalence tables"
+    ],
+    "notes": "UPGRADED from mood-equivalent to HIGH equivalence"
+  },
+  "bhairavi_corrected": {
+    "carnatic_raga": "Bhairavi",
+    "hindustani_raga": "Thodi",
+    "equivalence_type": "moderate",
+    "confidence": "MEDIUM",
+    "score": 120,
+    "scale_match": "70%",
+    "scale_notation": "Different scales but similar emotional context",
+    "evidence": "Hindustani Bhairavi corresponds to Carnatic Thodi in terms of aroha and avaroha",
+    "sources": [
+      "Wikipedia",
+      "Bhairavi (Carnatic) analysis"
+    ],
+    "notes": "CORRECTED: Bhairavi ↔ Bhairavi was factually wrong. These are completely different ragas despite sharing the same name"
+  },
+  "todi_corrected": {
+    "carnatic_raga": "Todi (Hanumatodi)",
+    "hindustani_raga": "Shubhapantuvarali",
+    "equivalence_type": "moderate",
+    "confidence": "MEDIUM",
+    "score": 110,
+    "scale_match": "75%",
+    "scale_notation": "Different structural approaches",
+    "evidence": "Hindustani Todi ≈ Carnatic Shubhapantuvarali, not Miyan ki Todi",
+    "sources": [
+      "Wikipedia",
+      "Todi raga analysis"
+    ],
+    "notes": "CORRECTED: Todi ↔ Miyan ki Todi was incorrect. They are different ragas"
+  }
+}
