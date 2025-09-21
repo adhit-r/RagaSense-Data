@@ -5,3 +5,5 @@
 *.joblib filter=lfs diff=lfs merge=lfs -text
 *.dylib filter=lfs diff=lfs merge=lfs -text
 *.json filter=lfs diff=lfs merge=lfs -text
+archive/data_versions/unified_ragasense_dataset/unified_artists_database.json filter=lfs diff=lfs merge=lfs -text
+archive/data_versions/youtube_song_analysis/youtube_videos_dataset.json filter=lfs diff=lfs merge=lfs -text
