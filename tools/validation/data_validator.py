@@ -57,15 +57,23 @@ class QualityMetrics:
 class RagaSenseDataValidator:
     """Comprehensive data validation system"""
     
-    def __init__(self, base_path: str = "/Users/adhi/axonome/RagaSense-Data", use_gpu: bool = True):
-        self.base_path = Path(base_path)
+    def __init__(self, base_path: Optional[str] = None, use_gpu: bool = False, wandb_enabled: bool = False):
+        # Resolve base path: CLI arg > env > repo root
+        env_base = os.environ.get("RAGASENSE_BASE_PATH")
+        if base_path:
+            self.base_path = Path(base_path)
+        elif env_base:
+            self.base_path = Path(env_base)
+        else:
+            self.base_path = Path(__file__).resolve().parents[2]
         self.schema_path = self.base_path / "schemas" / "metadata-schema.json"
         self.mapping_schema_path = self.base_path / "schemas" / "mapping-schema.json"
         self.data_path = self.base_path / "data"
         self.logs_path = self.base_path / "logs"
         
         # GPU configuration
-        self.use_gpu = use_gpu and GPU_AVAILABLE
+        env_gpu = os.environ.get("RAGASENSE_GPU", "").lower() in ("1", "true", "yes")
+        self.use_gpu = (use_gpu or env_gpu) and GPU_AVAILABLE
         self.gpu_available = GPU_AVAILABLE
         
         if self.use_gpu:
@@ -88,9 +96,10 @@ class RagaSenseDataValidator:
         self.mapping_schema = self._load_schema(self.mapping_schema_path)
         
         # Create logs directory
-        self.logs_path.mkdir(exist_ok=True)
+        self.logs_path.mkdir(parents=True, exist_ok=True)
         
         # Initialize W&B if available
+        self.wandb_enabled = wandb_enabled or (os.environ.get("RAGASENSE_WANDB", "").lower() in ("1", "true", "yes"))
         self.wandb_initialized = self._init_wandb()
     
     def _setup_gpu(self):
@@ -119,6 +128,8 @@ class RagaSenseDataValidator:
     
     def _init_wandb(self) -> bool:
         """Initialize Weights & Biases for validation tracking"""
+        if not getattr(self, "wandb_enabled", False):
+            return False
         try:
             import wandb
             wandb.init(
@@ -547,16 +558,17 @@ def main():
     import argparse
     
     parser = argparse.ArgumentParser(description="RagaSense Data Validation")
-    parser.add_argument("--base-path", default="/Users/adhi/axonome/RagaSense-Data", help="Base project path")
+    parser.add_argument("--base-path", default=os.environ.get("RAGASENSE_BASE_PATH"), help="Base project path (defaults to repo root or $RAGASENSE_BASE_PATH)")
     parser.add_argument("--tradition", choices=["carnatic", "hindustani"], help="Validate specific tradition")
     parser.add_argument("--file", help="Validate specific file")
     parser.add_argument("--mappings", action="store_true", help="Validate cross-tradition mappings only")
-    parser.add_argument("--wandb", action="store_true", help="Enable Weights & Biases logging")
+    parser.add_argument("--wandb", action="store_true", help="Enable Weights & Biases logging (or set RAGASENSE_WANDB=1)")
+    parser.add_argument("--gpu", action="store_true", help="Enable GPU if available (or set RAGASENSE_GPU=1)")
     
     args = parser.parse_args()
     
     # Initialize validator
-    validator = RagaSenseDataValidator(args.base_path)
+    validator = RagaSenseDataValidator(base_path=args.base_path, use_gpu=args.gpu, wandb_enabled=args.wandb)
     
     try:
         if args.file:

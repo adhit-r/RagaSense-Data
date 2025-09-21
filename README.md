@@ -38,6 +38,21 @@ python3 scripts/data_processing/extract_audio_features.py
 python3 ml_models/training/gpu_optimized_trainer.py
 ```
 
+### Validation
+```bash
+# Run full validation (CPU, W&B off)
+python3 tools/validation/data_validator.py
+
+# Validate a specific tradition
+python3 tools/validation/data_validator.py --tradition carnatic
+
+# Validate mappings only
+python3 tools/validation/data_validator.py --mappings
+
+# Optional: customize base path and enable GPU/W&B
+RAGASENSE_BASE_PATH=$PWD python3 tools/validation/data_validator.py --gpu --wandb
+```
+
 ## 📁 Project Structure
 
 ```
