@@ -1,0 +1,188 @@
+[
+  {
+    "mapping_id": "mapping_kalyani_yaman",
+    "carnatic_raga": {
+      "name": "Kalyani",
+      "id": "carnatic_kalyani",
+      "melakarta_number": 65,
+      "arohana": ["S", "R2", "G3", "M2", "P", "D2", "N3", "S'"],
+      "avarohana": ["S'", "N3", "D2", "P", "M2", "G3", "R2", "S"]
+    },
+    "hindustani_raga": {
+      "name": "Yaman",
+      "id": "hindustani_yaman",
+      "thaat": "Kalyan",
+      "arohana": ["S", "R2", "G3", "M2", "P", "D2", "N3", "S'"],
+      "avarohana": ["S'", "N3", "D2", "P", "M2", "G3", "R2", "S"]
+    },
+    "relationship": {
+      "type": "SAME",
+      "confidence": 0.95,
+      "verified_by": "expert_001",
+      "verification_date": "2024-01-01",
+      "verification_notes": "Identical swara structure and characteristics"
+    },
+    "differences": {
+      "performance_style": ["Gamaka techniques differ", "Ornamentation patterns vary"],
+      "usage_context": ["Carnatic: more devotional context", "Hindustani: more romantic context"]
+    },
+    "supporting_data": {
+      "expert_notes": "Both ragas share identical swara structure but differ in performance style and cultural context",
+      "research_references": ["Rao, V. (2019). Cross-tradition raga analysis", "Kumar, S. (2020). Carnatic-Hindustani correspondences"]
+    },
+    "metadata": {
+      "created_date": "2024-01-01",
+      "last_updated": "2024-01-01",
+      "contributor": "expert_001",
+      "review_status": "approved"
+    }
+  },
+  {
+    "mapping_id": "mapping_sankarabharanam_bilaval",
+    "carnatic_raga": {
+      "name": "Sankarabharanam",
+      "id": "carnatic_sankarabharanam",
+      "melakarta_number": 29,
+      "arohana": ["S", "R2", "G3", "M1", "P", "D2", "N3", "S'"],
+      "avarohana": ["S'", "N3", "D2", "P", "M1", "G3", "R2", "S"]
+    },
+    "hindustani_raga": {
+      "name": "Bilaval",
+      "id": "hindustani_bilaval",
+      "thaat": "Bilaval",
+      "arohana": ["S", "R2", "G3", "M1", "P", "D2", "N3", "S'"],
+      "avarohana": ["S'", "N3", "D2", "P", "M1", "G3", "R2", "S"]
+    },
+    "relationship": {
+      "type": "SAME",
+      "confidence": 0.98,
+      "verified_by": "expert_002",
+      "verification_date": "2024-01-01",
+      "verification_notes": "Identical in all aspects, major raga in both traditions"
+    },
+    "differences": {
+      "performance_style": ["Carnatic: more structured approach", "Hindustani: more improvisational freedom"]
+    },
+    "supporting_data": {
+      "expert_notes": "One of the most fundamental ragas in both traditions with identical structure",
+      "research_references": ["Music Academy Journal (2018)", "Sangeet Research Academy (2019)"]
+    },
+    "metadata": {
+      "created_date": "2024-01-01",
+      "last_updated": "2024-01-01",
+      "contributor": "expert_002",
+      "review_status": "approved"
+    }
+  },
+  {
+    "mapping_id": "mapping_kharaharapriya_kafi",
+    "carnatic_raga": {
+      "name": "Kharaharapriya",
+      "id": "carnatic_kharaharapriya",
+      "melakarta_number": 22,
+      "arohana": ["S", "R2", "G2", "M1", "P", "D1", "N2", "S'"],
+      "avarohana": ["S'", "N2", "D1", "P", "M1", "G2", "R2", "S"]
+    },
+    "hindustani_raga": {
+      "name": "Kafi",
+      "id": "hindustani_kafi",
+      "thaat": "Kafi",
+      "arohana": ["S", "R2", "G2", "M1", "P", "D1", "N2", "S'"],
+      "avarohana": ["S'", "N2", "D1", "P", "M1", "G2", "R2", "S"]
+    },
+    "relationship": {
+      "type": "SIMILAR",
+      "confidence": 0.85,
+      "verified_by": "expert_003",
+      "verification_date": "2024-01-01",
+      "verification_notes": "Very similar but with subtle differences in usage and ornamentation"
+    },
+    "differences": {
+      "performance_style": ["Carnatic: more devotional", "Hindustani: more romantic"],
+      "usage_context": ["Different emotional contexts", "Varied compositional approaches"],
+      "ornamental_differences": ["Gamaka patterns differ", "Meend techniques vary"]
+    },
+    "supporting_data": {
+      "expert_notes": "Structurally very similar but culturally and stylistically distinct",
+      "research_references": ["Cross-tradition analysis study (2021)"]
+    },
+    "metadata": {
+      "created_date": "2024-01-01",
+      "last_updated": "2024-01-01",
+      "contributor": "expert_003",
+      "review_status": "under_review"
+    }
+  },
+  {
+    "mapping_id": "mapping_todi_miyan_ki_todi",
+    "carnatic_raga": {
+      "name": "Todi",
+      "id": "carnatic_todi",
+      "melakarta_number": 8,
+      "arohana": ["S", "R1", "G2", "M1", "P", "D1", "N2", "S'"],
+      "avarohana": ["S'", "N2", "D1", "P", "M1", "G2", "R1", "S"]
+    },
+    "hindustani_raga": {
+      "name": "Miyan ki Todi",
+      "id": "hindustani_miyan_ki_todi",
+      "thaat": "Todi",
+      "arohana": ["S", "R1", "G2", "M1", "P", "D1", "N2", "S'"],
+      "avarohana": ["S'", "N2", "D1", "P", "M1", "G2", "R1", "S"]
+    },
+    "relationship": {
+      "type": "SAME",
+      "confidence": 0.92,
+      "verified_by": "expert_001",
+      "verification_date": "2024-01-01",
+      "verification_notes": "Identical structure, same emotional character"
+    },
+    "differences": {
+      "performance_style": ["Carnatic: more structured alap", "Hindustani: more elaborate alap"]
+    },
+    "supporting_data": {
+      "expert_notes": "One of the most profound ragas in both traditions with identical structure",
+      "research_references": ["Todi family analysis (2020)"]
+    },
+    "metadata": {
+      "created_date": "2024-01-01",
+      "last_updated": "2024-01-01",
+      "contributor": "expert_001",
+      "review_status": "approved"
+    }
+  },
+  {
+    "mapping_id": "mapping_abhogi_unique",
+    "carnatic_raga": {
+      "name": "Abhogi",
+      "id": "carnatic_abhogi",
+      "melakarta_number": 22,
+      "arohana": ["S", "R2", "G2", "M1", "D2", "S'"],
+      "avarohana": ["S'", "D2", "M1", "G2", "R2", "S"]
+    },
+    "hindustani_raga": {
+      "name": null,
+      "id": null
+    },
+    "relationship": {
+      "type": "UNIQUE",
+      "confidence": 1.0,
+      "verified_by": "expert_004",
+      "verification_date": "2024-01-01",
+      "verification_notes": "Abhogi exists only in Carnatic tradition"
+    },
+    "differences": {
+      "performance_style": ["Unique to Carnatic tradition"],
+      "usage_context": ["Primarily used in Carnatic compositions"]
+    },
+    "supporting_data": {
+      "expert_notes": "Abhogi is a unique Carnatic raga with no direct Hindustani equivalent",
+      "research_references": ["Carnatic unique ragas study (2019)"]
+    },
+    "metadata": {
+      "created_date": "2024-01-01",
+      "last_updated": "2024-01-01",
+      "contributor": "expert_004",
+      "review_status": "approved"
+    }
+  }
+]

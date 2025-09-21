@@ -1,0 +1,29 @@
+
+# OpenSearch Dashboard Configuration for RagaSense-Data
+# This configuration allows full access to the dashboard
+
+server.host: "0.0.0.0"
+server.port: 5601
+
+opensearch.hosts: ["http://localhost:9200"]
+
+# Disable security for easier access
+opensearch_security.enabled: false
+
+# CORS configuration
+server.cors.enabled: true
+server.cors.allowOrigin: ["*"]
+server.cors.allowCredentials: true
+
+# Logging
+logging.appenders:
+  file:
+    type: file
+    fileName: /var/log/opensearch-dashboards/opensearch_dashboards.log
+    layout:
+      type: json
+
+logging.loggers:
+  - name: opensearch_dashboards
+    level: info
+    appenders: [file]

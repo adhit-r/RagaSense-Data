@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  postgresql:
+    image: postgres:15-alpine
+    container_name: ragasense-postgresql
+    environment:
+      POSTGRES_DB: ragasense
+      POSTGRES_USER: ragasense_user
+      POSTGRES_PASSWORD: ragasense_password
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8 --lc-collate=C --lc-ctype=C"
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ragasense_user -d ragasense"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - ragasense-network
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: ragasense-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@ragasense.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "8081:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - postgresql
+    restart: unless-stopped
+    networks:
+      - ragasense-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: ragasense-redis
+    ports:
+      - "6380:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - ragasense-network
+
+volumes:
+  postgresql_data:
+    driver: local
+  pgadmin_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  ragasense-network:
+    driver: bridge
+

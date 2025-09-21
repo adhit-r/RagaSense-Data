@@ -1,0 +1,15 @@
+{
+  "cleanup_date": "2025-09-14T10:21:58.170807",
+  "scripts_kept": [
+    "scripts/data_processing/extract_audio_features.py",
+    "scripts/dataset_creation/fix_duplicate_raga_names.py",
+    "scripts/dataset_creation/process_extracted_saraga_data.py",
+    "scripts/dataset_creation/separate_combination_ragas_and_count_unique.py",
+    "scripts/dataset_creation/organize_ramanarunachalam_and_create_audio.py",
+    "scripts/utilities/setup_postgresql_migration_v1.0_stable.py",
+    "scripts/utilities/data_migrate_json_to_postgresql_v1.0_stable.py"
+  ],
+  "scripts_archived_count": 63,
+  "total_scripts_before": 70,
+  "total_scripts_after": 7
+}

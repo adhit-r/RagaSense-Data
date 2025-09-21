@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RagaSense - ML Model Test</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .upload-area {
+            border: 3px dashed rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .upload-area:hover {
+            border-color: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .upload-area.dragover {
+            border-color: #4CAF50;
+            background: rgba(76, 175, 80, 0.2);
+        }
+        input[type="file"] {
+            display: none;
+        }
+        button {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px 0 rgba(76, 175, 80, 0.3);
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 rgba(76, 175, 80, 0.4);
+        }
+        button:disabled {
+            background: #666;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        .result {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #4CAF50;
+        }
+        .error {
+            border-left-color: #f44336;
+            background: rgba(244, 67, 54, 0.1);
+        }
+        .loading {
+            text-align: center;
+            padding: 20px;
+        }
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 4px solid white;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .confidence-bar {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            height: 20px;
+            margin: 5px 0;
+            overflow: hidden;
+        }
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #8BC34A);
+            border-radius: 10px;
+            transition: width 0.5s ease;
+        }
+        .model-info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .model-info h3 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 RagaSense ML Model Test</h1>
+        
+        <div class="model-info">
+            <h3>📊 Model Information</h3>
+            <p><strong>Accuracy:</strong> 88.06%</p>
+            <p><strong>Supported Ragas:</strong> kalyani, sri, unknown</p>
+            <p><strong>Architecture:</strong> 15,601 → 512 → 3</p>
+            <p><strong>Training Data:</strong> 339 WAV files from Saraga Carnatic Melody Synth</p>
+        </div>
+
+        <div class="upload-area" id="uploadArea">
+            <h3>🎤 Upload Audio File</h3>
+            <p>Drag and drop an audio file here or click to select</p>
+            <p><small>Supported formats: WAV, MP3, FLAC</small></p>
+            <input type="file" id="audioFile" accept="audio/*">
+        </div>
+
+        <div style="text-align: center;">
+            <button onclick="testWithSample()">🧪 Test with Sample Audio</button>
+            <button onclick="checkHealth()">❤️ Health Check</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:5000';
+        
+        // File upload handling
+        const uploadArea = document.getElementById('uploadArea');
+        const audioFile = document.getElementById('audioFile');
+        
+        uploadArea.addEventListener('click', () => audioFile.click());
+        uploadArea.addEventListener('dragover', handleDragOver);
+        uploadArea.addEventListener('dragleave', handleDragLeave);
+        uploadArea.addEventListener('drop', handleDrop);
+        audioFile.addEventListener('change', handleFileSelect);
+        
+        function handleDragOver(e) {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        }
+        
+        function handleDragLeave(e) {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+        }
+        
+        function handleDrop(e) {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                processAudioFile(files[0]);
+            }
+        }
+        
+        function handleFileSelect(e) {
+            const file = e.target.files[0];
+            if (file) {
+                processAudioFile(file);
+            }
+        }
+        
+        async function processAudioFile(file) {
+            showLoading('Processing audio file...');
+            
+            const formData = new FormData();
+            formData.append('audio', file);
+            
+            try {
+                const response = await fetch(`${API_BASE}/predict`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    showResult(result.prediction, file.name);
+                } else {
+                    showError(result.error);
+                }
+            } catch (error) {
+                showError(`Network error: ${error.message}`);
+            }
+        }
+        
+        async function testWithSample() {
+            showLoading('Testing with sample audio...');
+            
+            try {
+                const response = await fetch(`${API_BASE}/test`);
+                const result = await response.json();
+                
+                if (result.success) {
+                    showResult(result.prediction, result.test_file);
+                } else {
+                    showError(result.error);
+                }
+            } catch (error) {
+                showError(`Network error: ${error.message}`);
+            }
+        }
+        
+        async function checkHealth() {
+            showLoading('Checking API health...');
+            
+            try {
+                const response = await fetch(`${API_BASE}/health`);
+                const result = await response.json();
+                
+                if (result.status === 'healthy') {
+                    showHealthResult(result);
+                } else {
+                    showError('API is not healthy');
+                }
+            } catch (error) {
+                showError(`Network error: ${error.message}`);
+            }
+        }
+        
+        function showLoading(message) {
+            document.getElementById('result').innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>${message}</p>
+                </div>
+            `;
+        }
+        
+        function showResult(prediction, filename) {
+            const confidence = (prediction.confidence * 100).toFixed(1);
+            const confidenceBars = Object.entries(prediction.all_confidence_scores)
+                .map(([raga, score]) => `
+                    <div>
+                        <strong>${raga}:</strong> ${(score * 100).toFixed(1)}%
+                        <div class="confidence-bar">
+                            <div class="confidence-fill" style="width: ${score * 100}%"></div>
+                        </div>
+                    </div>
+                `).join('');
+            
+            document.getElementById('result').innerHTML = `
+                <div class="result">
+                    <h3>🎯 Prediction Result</h3>
+                    <p><strong>File:</strong> ${filename}</p>
+                    <p><strong>Predicted Raga:</strong> <span style="color: #4CAF50; font-size: 1.2em;">${prediction.predicted_raga}</span></p>
+                    <p><strong>Confidence:</strong> ${confidence}%</p>
+                    
+                    <h4>📊 All Confidence Scores:</h4>
+                    ${confidenceBars}
+                    
+                    <p><small>Timestamp: ${new Date().toLocaleString()}</small></p>
+                </div>
+            `;
+        }
+        
+        function showHealthResult(health) {
+            document.getElementById('result').innerHTML = `
+                <div class="result">
+                    <h3>❤️ API Health Check</h3>
+                    <p><strong>Status:</strong> <span style="color: #4CAF50;">${health.status}</span></p>
+                    <p><strong>Model Loaded:</strong> ${health.model_loaded ? '✅ Yes' : '❌ No'}</p>
+                    <p><strong>Supported Ragas:</strong> ${health.supported_ragas.join(', ')}</p>
+                    <p><small>Timestamp: ${new Date(health.timestamp).toLocaleString()}</small></p>
+                </div>
+            `;
+        }
+        
+        function showError(message) {
+            document.getElementById('result').innerHTML = `
+                <div class="result error">
+                    <h3>❌ Error</h3>
+                    <p>${message}</p>
+                    <p><small>Timestamp: ${new Date().toLocaleString()}</small></p>
+                </div>
+            `;
+        }
+        
+        // Check API health on page load
+        window.addEventListener('load', () => {
+            checkHealth();
+        });
+    </script>
+</body>
+</html>
